@@ -1,0 +1,1 @@
+{"uuid":"7b5b4754-2496-43ce-ae76-c15f0dc354a8","name":"Tests.TC05_PackagePageTC.quit","children":["47d7d7dc-c4fc-4a5d-aa91-bf96417e5e0c"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732976857806,"stop":1732976857807}],"start":1732976857805,"stop":1732976857807}

@@ -1,0 +1,5 @@
+[INFO] 04-12-2024 13:01:31 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:43)] - null
+[INFO] 04-12-2024 13:01:33 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:45)] - chromedriver is opened
+[INFO] 04-12-2024 13:01:51 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:47)] - Page is redirected to URL
+[INFO] 04-12-2024 13:01:51 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLoginCycleStarted
+[INFO] 04-12-2024 13:01:52 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidLoginCyclefailed

@@ -1,0 +1,7 @@
+[INFO] 27-11-2024 23:16:20 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:45)] - null
+[INFO] 27-11-2024 23:16:22 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:47)] - chromedriver is opened
+[INFO] 27-11-2024 23:16:28 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:49)] - Page is redirected to URL
+[INFO] 27-11-2024 23:16:28 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidDynamicRegistrationStarted
+[INFO] 27-11-2024 23:16:29 [main] [Utilittes.Utility.generatePinCode(Utility.java:238)] - Generated PIN Code:495192
+[INFO] 27-11-2024 23:16:30 [main] [Utilittes.Utility.generatePinCode(Utility.java:238)] - Generated PIN Code:618246
+[INFO] 27-11-2024 23:16:30 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidDynamicRegistrationPassed

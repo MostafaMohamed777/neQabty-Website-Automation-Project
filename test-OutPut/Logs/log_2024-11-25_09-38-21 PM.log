@@ -1,0 +1,10 @@
+[INFO] 25-11-2024 21:38:21 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:36)] - null
+[INFO] 25-11-2024 21:38:27 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:38)] - chromedriver is opened
+[INFO] 25-11-2024 21:38:31 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:40)] - Page is redirected to URL
+[INFO] 25-11-2024 21:38:31 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidRegistrationTcStarted
+[INFO] 25-11-2024 21:38:32 [main] [Pages.P02_RegistrationPage.enterStaticPinCode(P02_RegistrationPage.java:51)] - Number of pin fields is6
+[INFO] 25-11-2024 21:38:33 [main] [Pages.P02_RegistrationPage.enterStaticConfirmPinCode(P02_RegistrationPage.java:63)] - Number of confirm pin fields is6
+[ERROR] 25-11-2024 21:38:33 [main] [Utilittes.Utility.fillPinField(Utility.java:176)] - Code length is shorter than PIN fields!
+[ERROR] 25-11-2024 21:38:33 [main] [Utilittes.Utility.fillPinField(Utility.java:176)] - Code length is shorter than PIN fields!
+[ERROR] 25-11-2024 21:38:33 [main] [Utilittes.Utility.fillPinField(Utility.java:176)] - Code length is shorter than PIN fields!
+[INFO] 25-11-2024 21:38:33 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidRegistrationTcPassed

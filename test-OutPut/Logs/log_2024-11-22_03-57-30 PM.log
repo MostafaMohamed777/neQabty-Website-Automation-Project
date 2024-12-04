@@ -1,0 +1,3 @@
+[INFO] 22-11-2024 15:57:30 [main] [Tests.Tc01_LandingPage.setUp(Tc01_LandingPage.java:27)] - null
+[INFO] 22-11-2024 15:57:33 [main] [Tests.Tc01_LandingPage.setUp(Tc01_LandingPage.java:29)] - chromedriver is opened
+[INFO] 22-11-2024 15:58:26 [main] [Tests.Tc01_LandingPage.setUp(Tc01_LandingPage.java:31)] - Page is redirected to URL

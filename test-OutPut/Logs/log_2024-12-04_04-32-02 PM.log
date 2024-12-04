@@ -1,0 +1,9 @@
+[INFO] 04-12-2024 16:32:02 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:45)] - null
+[INFO] 04-12-2024 16:32:04 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:47)] - chromedriver is opened
+[INFO] 04-12-2024 16:32:19 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:49)] - Page is redirected to URL
+[INFO] 04-12-2024 16:32:19 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidDynamicRegistrationStarted
+[INFO] 04-12-2024 16:32:19 [main] [Utilittes.Utility.setPhoneNumber(Utility.java:297)] - storedPhoneNumber Is :01515277751
+[INFO] 04-12-2024 16:32:19 [main] [Pages.P02_RegistrationPage.registerWithUniqueRandomPhoneNumber(P02_RegistrationPage.java:49)] - the generated phone number is =01515277751
+[INFO] 04-12-2024 16:32:23 [main] [Utilittes.Utility.generatePinCode(Utility.java:271)] - Generated PIN Code:723519
+[INFO] 04-12-2024 16:32:23 [main] [Utilittes.Utility.setPinCode(Utility.java:302)] - storedPhoneNumber Is :723519
+[INFO] 04-12-2024 16:32:24 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidDynamicRegistrationPassed

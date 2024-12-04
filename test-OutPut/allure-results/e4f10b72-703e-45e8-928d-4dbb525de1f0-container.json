@@ -1,0 +1,1 @@
+{"uuid":"e4f10b72-703e-45e8-928d-4dbb525de1f0","name":"Tests.Tc02_RegistrationPage.quit","children":["f1c97bfb-3f05-478b-bd87-72471dad9183"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732799633132,"stop":1732799633462}],"start":1732799633132,"stop":1732799633462}

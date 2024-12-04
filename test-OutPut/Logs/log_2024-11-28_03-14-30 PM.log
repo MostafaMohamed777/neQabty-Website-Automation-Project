@@ -1,0 +1,8 @@
+[INFO] 28-11-2024 15:14:30 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:45)] - null
+[INFO] 28-11-2024 15:14:33 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:47)] - chromedriver is opened
+[INFO] 28-11-2024 15:14:39 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:49)] - Page is redirected to URL
+[INFO] 28-11-2024 15:14:39 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidDynamicRegistrationStarted
+[INFO] 28-11-2024 15:14:41 [main] [Utilittes.Utility.generatePinCode(Utility.java:238)] - Generated PIN Code:712697
+[INFO] 28-11-2024 15:14:42 [main] [Utilittes.Utility.generatePinCode(Utility.java:238)] - Generated PIN Code:269158
+[INFO] 28-11-2024 15:14:43 [main] [Pages.P02_RegistrationPage.getSuccessfulMassage(P02_RegistrationPage.java:102)] - Massage is :تم تسجيل الإشتراك بنجاح
+[INFO] 28-11-2024 15:14:43 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidDynamicRegistrationPassed

@@ -1,0 +1,9 @@
+[INFO] 27-11-2024 22:35:56 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:45)] - null
+[INFO] 27-11-2024 22:35:58 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:47)] - chromedriver is opened
+[INFO] 27-11-2024 22:36:07 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:49)] - Page is redirected to URL
+[INFO] 27-11-2024 22:36:07 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidStaticRegistrationCycleTcStarted
+[INFO] 27-11-2024 22:36:08 [main] [Pages.P02_RegistrationPage.enterStaticPinCode(P02_RegistrationPage.java:63)] - Number of pin fields is6
+[INFO] 27-11-2024 22:36:09 [main] [Pages.P02_RegistrationPage.enterStaticConfirmPinCode(P02_RegistrationPage.java:76)] - Number of confirm pin fields is6
+[INFO] 27-11-2024 22:36:09 [main] [Pages.P02_RegistrationPage.enterStaticPinCode(P02_RegistrationPage.java:63)] - Number of pin fields is6
+[INFO] 27-11-2024 22:36:09 [main] [Pages.P02_RegistrationPage.enterStaticConfirmPinCode(P02_RegistrationPage.java:76)] - Number of confirm pin fields is6
+[INFO] 27-11-2024 22:36:10 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidStaticRegistrationCycleTcPassed

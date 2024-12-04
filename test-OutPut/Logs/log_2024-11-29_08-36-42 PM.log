@@ -1,0 +1,5 @@
+[INFO] 29-11-2024 20:36:42 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:43)] - null
+[INFO] 29-11-2024 20:36:44 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:45)] - chromedriver is opened
+[INFO] 29-11-2024 20:36:49 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:47)] - Page is redirected to URL
+[INFO] 29-11-2024 20:36:49 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToPackagePageStarted
+[INFO] 29-11-2024 20:36:52 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToPackagePagefailed

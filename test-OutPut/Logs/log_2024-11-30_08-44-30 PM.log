@@ -1,0 +1,11 @@
+[INFO] 30-11-2024 20:44:30 [main] [Tests.TC05_PackagePageTC.setUp(TC05_PackagePageTC.java:44)] - null
+[INFO] 30-11-2024 20:44:35 [main] [Tests.TC05_PackagePageTC.setUp(TC05_PackagePageTC.java:46)] - chromedriver is opened
+[INFO] 30-11-2024 20:44:41 [main] [Tests.TC05_PackagePageTC.setUp(TC05_PackagePageTC.java:48)] - Page is redirected to URL
+[INFO] 30-11-2024 20:44:41 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidVisibleOfPackageStarted
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element1Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element2Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element3Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element1Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element2Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Pages.P05_PackagesPage.assertPackageDisplayed(P05_PackagesPage.java:61)] - Element3Is Visible
+[INFO] 30-11-2024 20:44:44 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidVisibleOfPackagePassed

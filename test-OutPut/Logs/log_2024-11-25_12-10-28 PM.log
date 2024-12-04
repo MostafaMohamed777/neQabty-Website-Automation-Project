@@ -1,0 +1,5 @@
+[INFO] 25-11-2024 12:10:28 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:36)] - null
+[INFO] 25-11-2024 12:10:33 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:38)] - chromedriver is opened
+[INFO] 25-11-2024 12:10:38 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:40)] - Page is redirected to URL
+[INFO] 25-11-2024 12:10:38 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidRegistrationTcStarted
+[INFO] 25-11-2024 12:10:39 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidRegistrationTcfailed

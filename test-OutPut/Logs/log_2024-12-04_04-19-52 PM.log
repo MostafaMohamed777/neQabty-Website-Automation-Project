@@ -1,0 +1,6 @@
+[INFO] 04-12-2024 16:19:52 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:44)] - null
+[INFO] 04-12-2024 16:19:54 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:46)] - chromedriver is opened
+[INFO] 04-12-2024 16:20:09 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:48)] - Page is redirected to URL
+[INFO] 04-12-2024 16:20:09 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLoginCycleStarted
+[ERROR] 04-12-2024 16:20:10 [main] [Pages.P03_LoginPage.enterPhoneNumber(P03_LoginPage.java:45)] - Phone number is null or empty!
+[INFO] 04-12-2024 16:20:10 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidLoginCyclefailed

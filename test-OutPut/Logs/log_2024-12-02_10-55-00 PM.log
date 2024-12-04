@@ -1,0 +1,5 @@
+[INFO] 02-12-2024 22:55:00 [main] [Tests.Tc06_PackageSubscribe.setUp(Tc06_PackageSubscribe.java:42)] - null
+[INFO] 02-12-2024 22:55:08 [main] [Tests.Tc06_PackageSubscribe.setUp(Tc06_PackageSubscribe.java:44)] - chromedriver is opened
+[INFO] 02-12-2024 22:55:13 [main] [Tests.Tc06_PackageSubscribe.setUp(Tc06_PackageSubscribe.java:46)] - Page is redirected to URL
+[INFO] 02-12-2024 22:55:13 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToPackagePageStarted
+[INFO] 02-12-2024 22:55:21 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToPackagePagePassed
