@@ -24,7 +24,7 @@ public class Utility {
     private static final HashSet<String> generatedNumbers =new HashSet<>();
     private static Random random =new Random();
     private static final Faker faker = new Faker();
-    private static final String DATA_FILE = "testData.properties";
+
 
 
     // ======================= WebDriver Helper Methods ======================= //
