@@ -27,7 +27,7 @@ public class P03_LoginPage {
 
     //Action
 
-    public P03_LoginPage enterPinCode()
+    public P03_LoginPage enterDynamicPinCode()
    {
     String pinCode  =Utility.getData("pinCode");
        if (pinCode == null || pinCode.isEmpty()) {
@@ -37,7 +37,7 @@ public class P03_LoginPage {
     Utility.fillPinField(pinElements,pinCode);
     return this;
    }
-    public  P03_LoginPage enterPhoneNumber(){
+    public  P03_LoginPage enterDynamicPhoneNumber(){
         String phoneNumber = Utility.getData("phoneNumber");
         if (phoneNumber == null || phoneNumber.isEmpty()) {
             LogsUtils.error("Phone number is null or empty!");
@@ -46,6 +46,17 @@ public class P03_LoginPage {
         Utility.sendData(driver,phoneNumberFiled,phoneNumber);
         return this;
     }
+    public  P03_LoginPage enterStaticPhoneNumber(String phoneNumber){
+        Utility.sendData(driver,phoneNumberFiled,phoneNumber);
+        return this;
+    }
+    public P03_LoginPage enterStaticPinCode(String pinCode)
+    {
+        pinElements =driver.findElements(pinFields);
+        Utility.fillPinField(pinElements,pinCode);
+        return this;
+    }
+
     public P03_LoginPage confirmLoginPhoneNumber()
     {
         Utility.clickElement(driver,confirmBtn);

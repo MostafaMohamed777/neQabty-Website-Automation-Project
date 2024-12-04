@@ -1,7 +1,6 @@
 package Tests;
 
 import Pages.P01_LandingPge;
-import Pages.P02_RegistrationPage;
 import Pages.P03_LoginPage;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
@@ -54,9 +53,9 @@ public class Tc03_LoginPage {
     public void ValidLoginCycle() throws IOException {
         new P01_LandingPge(getDriver()).clickOnLoginBtn();
         new P03_LoginPage(getDriver())
-                .enterPhoneNumber()
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterPinCode()
+                .enterDynamicPinCode()
                 .confirmLoginBTn();
         Assert.assertTrue(new P03_LoginPage(getDriver()).
                 assertHomePage(DataUtils.getPropertyValue("Environments.properties","HOME_URL_Staging")));
@@ -65,6 +64,6 @@ public class Tc03_LoginPage {
     @AfterMethod
     public void quit()
     {
-        // quitDriver(); 01279201492
+        // quitDriver();
     }
 }

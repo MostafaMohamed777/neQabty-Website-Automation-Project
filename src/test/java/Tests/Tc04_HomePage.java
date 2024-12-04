@@ -51,9 +51,9 @@ public class Tc04_HomePage {
     @Test
     public void ValidNavigateToPackagePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterPhoneNumber()
+                .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
-                .enterPinCode()
+                .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .ScrollingAndNavigatePackagesPage();
         Assert.assertTrue(new P04_HomePage(getDriver()).

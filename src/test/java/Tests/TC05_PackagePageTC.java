@@ -1,7 +1,6 @@
 package Tests;
 
 import Pages.P03_LoginPage;
-import Pages.P04_HomePage;
 import Pages.P05_PackagesPage;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
@@ -53,9 +52,9 @@ public class TC05_PackagePageTC {
     @Test
     public void ValidVisibleOfPackage()  {
         new P03_LoginPage(getDriver())
-                .enterPhoneNumber()
+                .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
-                .enterPinCode()
+                .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .ScrollingAndNavigatePackagesPage()
                 .assertPackageDisplayed();
@@ -64,9 +63,9 @@ public class TC05_PackagePageTC {
     @Test
     public void ValidNavigateToPackagePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterPhoneNumber()
+                .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
-                .enterPinCode()
+                .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .ScrollingAndNavigatePackagesPage()
                 .enterSecondPackage();

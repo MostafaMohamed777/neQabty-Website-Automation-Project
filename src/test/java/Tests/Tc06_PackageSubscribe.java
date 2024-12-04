@@ -1,10 +1,8 @@
 package Tests;
 
 import Pages.P03_LoginPage;
-import Pages.P05_PackagesPage;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
-import org.testng.Assert;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -53,9 +51,9 @@ public class Tc06_PackageSubscribe {
     @Test
     public void ValidPackageSubscribe() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterPhoneNumber()
+                .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
-                .enterPinCode()
+                .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .ScrollingAndNavigatePackagesPage()
                 .enterSecondPackage()
