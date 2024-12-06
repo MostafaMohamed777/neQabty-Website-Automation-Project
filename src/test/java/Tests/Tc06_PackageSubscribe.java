@@ -49,7 +49,27 @@ public class Tc06_PackageSubscribe {
 
 
     @Test
-    public void ValidPackageSubscribe() throws IOException {
+    public void ValidFirstPackageSubscribe() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumber)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .ScrollingAndNavigatePackagesPage()
+                .enterFirstPackage()
+                .enterFirstName()
+                .enterSecondName()
+                .enterThirdName()
+                .enterLastName()
+                .enterEmail()
+                .enterBirthDate()
+                .enterUserJob()
+                .confirmSubscribe()
+                .enterNationalIdForFirstPackage();
+        ;
+    }
+    @Test
+    public void ValidSecondPackageSubscribe() throws IOException {
         new P03_LoginPage(getDriver())
                 .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
@@ -63,9 +83,32 @@ public class Tc06_PackageSubscribe {
                 .enterLastName()
                 .enterEmail()
                 .enterBirthDate()
-                .enterUserJob();
+                .enterUserJob()
+                .confirmSubscribe()
+                .enterNationalIdForSecondPackage();
         ;
     }
+    @Test
+    public void ValidThirdPackageSubscribe() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumber)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .ScrollingAndNavigatePackagesPage()
+                .enterThirdPackage()
+                .enterFirstName()
+                .enterSecondName()
+                .enterThirdName()
+                .enterLastName()
+                .enterEmail()
+                .enterBirthDate()
+                .enterUserJob()
+                .confirmSubscribe()
+                .enterNationalIdForThirdPackage();
+        ;
+    }
+
 
     @AfterMethod
     public void quit()

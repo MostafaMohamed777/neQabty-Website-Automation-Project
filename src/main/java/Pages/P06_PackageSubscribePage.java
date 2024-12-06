@@ -18,6 +18,9 @@ public class P06_PackageSubscribePage {
     private final By birthDateTable =By.cssSelector("p-calendar[placeholder=\"تاريخ الميلاد\"]");
     private final By birthDayValue =By.xpath("//tr[1]/td[3]/span");
     private final By confirmSubscribe =By.cssSelector("button[type=\"submit\"]");
+    private final By nationalId =By.id("nationalId");
+    private final By confirmNationalId =By.cssSelector("button[type=\"submit\"]");
+
 
 
     //Variables
@@ -67,9 +70,29 @@ public class P06_PackageSubscribePage {
     }
     public P06_PackageSubscribePage confirmSubscribe()
     {
+        Utility.scrollToElement(driver,confirmSubscribe);
         Utility.clickElement(driver,confirmSubscribe);
         return this;
     }
+    public P06_PackageSubscribePage enterNationalIdForFirstPackage()
+    {
+        String nationalIDForFirstPackage= Utility.nationalIdForFirstPackage();
+        Utility.sendData(driver,nationalId,nationalIDForFirstPackage);
+        return this;
+    }
+    public P06_PackageSubscribePage enterNationalIdForSecondPackage()
+    {
+        String nationalIDForSecondPackage= Utility.nationalIdForSecoundPackage();
+        Utility.sendData(driver,nationalId,nationalIDForSecondPackage);
+        return this;
+    }
+    public P06_PackageSubscribePage enterNationalIdForThirdPackage()
+    {
+        String nationalIDForThirdPackage= Utility.nationalIdForThirdPackage();
+        Utility.sendData(driver,nationalId,nationalIDForThirdPackage);
+        return this;
+    }
+
 
     //Assertions
 

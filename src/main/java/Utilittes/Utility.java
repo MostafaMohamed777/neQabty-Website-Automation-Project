@@ -219,8 +219,38 @@ public class Utility {
         }
        // storedPhoneNumber=phoneNumber.toString();
         return phoneNumber.toString();
+    }
 
+    //Todo: Generate Egyptian National Id
+    private static String generateNationalID(int mainAge,int maxAge)
+    {
+        Calendar calendar= Calendar.getInstance();
 
+        int currentYear =calendar.get(calendar.YEAR);
+        int minBirthYear = currentYear -maxAge;
+        int maxBirthYear =currentYear -mainAge;
+        int birthYear =maxBirthYear+ random.nextInt(maxBirthYear-minBirthYear +1);
+        int countryCode =(birthYear<2000) ?2 :3;
+        int yearTwoDigits=birthYear %100;
+        int month = 1+random.nextInt(12);
+        int day =1+random.nextInt(29);
+        int governmentCode =1+ random.nextInt(29);
+        int serialNumber =random.nextInt(10000);
+        int lastOne=random.nextInt(10);
+        return String.format("%d%02d%02d%02d%02d%04d%d",
+                countryCode,yearTwoDigits,month,day,governmentCode,serialNumber,lastOne);
+    }
+    public static String nationalIdForFirstPackage()
+    {
+        return generateNationalID(0,59);
+    }
+    public static String nationalIdForSecoundPackage()
+    {
+        return generateNationalID(60,65);
+    }
+    public static String nationalIdForThirdPackage()
+    {
+        return generateNationalID(65,75);
     }
 
     /**
@@ -250,9 +280,6 @@ public class Utility {
         String email=faker.internet().emailAddress();
         return email;
     }
-
-
-
 
     // ======================= PIN Code Handling ======================= //
 
@@ -305,7 +332,8 @@ public class Utility {
             LogsUtils.info(key+"saved with value:"+value);
         } catch (IOException e) {
             LogsUtils.error("Field to save data :"+e.getMessage());
-        }}
+        }
+    }
     //ToDo: Retrieve data from the properties file
     public static String getData(String key)
     {
@@ -318,7 +346,8 @@ public class Utility {
         } catch (IOException e) {
            LogsUtils.error("Failed to retrieve data for key:"+key+ "Erorr"+e.getMessage());
            return null;
-        }}
+        }
+    }
     /*
     private static String storedPhoneNumber;
     private static String storedPinCode;
