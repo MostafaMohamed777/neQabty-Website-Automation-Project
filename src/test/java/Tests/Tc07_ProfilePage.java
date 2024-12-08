@@ -2,8 +2,12 @@ package Tests;
 
 import Pages.P03_LoginPage;
 import Pages.P04_HomePage;
+import Pages.P07_ProfilePage;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,14 +24,14 @@ import static DriverFactory.DriverFactory.getDriver;
 import static DriverFactory.DriverFactory.setUpBrowser;
 import static Utilittes.DataUtils.getPropertyValue;
 
+
 @Listeners({iInvokedMethodListenersClass.class,
         iTestResultListenersClass.class})
-public class Tc04_HomePage {
-    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhone");
+public class Tc07_ProfilePage {
+    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhoneEng");
     private final String pinCode = DataUtils.getJasonData("ValidRegistrationData","PinCode");
 
-
-    public Tc04_HomePage() throws FileNotFoundException {
+    public Tc07_ProfilePage() throws FileNotFoundException {
     }
 
     @BeforeMethod
@@ -49,26 +53,37 @@ public class Tc04_HomePage {
     }
 
     @Test
-    public void ValidNavigateToPackagePage() throws IOException {
-        new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
-                .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
-                .confirmLoginBTn()
-                .ScrollingAndNavigatePackagesPage();
-        Assert.assertTrue(new P04_HomePage(getDriver()).
-                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","SEHA_PACKAGES")));
-    }
-    @Test
     public void ValidNavigateToProfilePage() throws IOException {
         new P03_LoginPage(getDriver())
                 .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
                 .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
-                .enterProfilePage();
-        Assert.assertTrue(new P04_HomePage(getDriver()).
-                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","PROFILE_PAGE")));
+                .enterProfilePage()
+                .navigateToPackagePage();
+    }
+    @Test
+    public void ValidLogOut() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumber)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterProfilePage()
+                .enterLogOut();
+        Assert.assertTrue(new P03_LoginPage(getDriver()).
+                assertHomePage(DataUtils.getPropertyValue("Environments.properties","LANDING_URL")));
+    }
+    @Test
+    public void packagesAssertionsPage() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumber)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterProfilePage()
+                .navigateToPackagePage();
+        Assert.assertTrue(new P07_ProfilePage(getDriver()).assertPackage());
     }
 
     @AfterMethod

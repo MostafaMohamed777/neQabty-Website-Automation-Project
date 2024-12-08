@@ -1,0 +1,5 @@
+[INFO] 06-12-2024 22:06:31 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:42)] - null
+[INFO] 06-12-2024 22:06:55 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:44)] - chromedriver is opened
+[INFO] 06-12-2024 22:06:59 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - Page is redirected to URL
+[INFO] 06-12-2024 22:07:00 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToProfilePageStarted
+[INFO] 06-12-2024 22:07:05 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToProfilePagePassed

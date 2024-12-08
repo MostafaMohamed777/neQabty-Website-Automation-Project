@@ -1,0 +1,1 @@
+{"uuid":"310816a9-fd76-4316-b0e1-2c3141653769","name":"Tests.Tc07_ProfilePage.setUp","children":["b2360cfa-b683-476c-b37f-fef7b958b0ac"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1733658152494,"stop":1733658168133}],"afters":[],"start":1733658152493,"stop":1733658168134}

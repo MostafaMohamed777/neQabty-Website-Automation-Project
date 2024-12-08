@@ -1,0 +1,5 @@
+[INFO] 06-12-2024 22:45:34 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:42)] - null
+[INFO] 06-12-2024 22:45:36 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:44)] - chromedriver is opened
+[INFO] 06-12-2024 22:45:41 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - Page is redirected to URL
+[INFO] 06-12-2024 22:45:41 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLogOutStarted
+[INFO] 06-12-2024 22:45:59 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidLogOutPassed

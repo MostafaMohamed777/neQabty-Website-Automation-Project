@@ -1,0 +1,5 @@
+[INFO] 08-12-2024 14:08:02 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - null
+[INFO] 08-12-2024 14:08:05 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:48)] - chromedriver is opened
+[INFO] 08-12-2024 14:08:22 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:50)] - Page is redirected to URL
+[INFO] 08-12-2024 14:08:22 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CasepackagesAssertionsPageStarted
+[INFO] 08-12-2024 14:08:31 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CasepackagesAssertionsPagefailed

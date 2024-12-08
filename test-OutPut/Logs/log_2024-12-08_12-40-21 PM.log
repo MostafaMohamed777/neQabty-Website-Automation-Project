@@ -1,0 +1,6 @@
+[INFO] 08-12-2024 12:40:21 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:43)] - null
+[INFO] 08-12-2024 12:40:28 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:45)] - chromedriver is opened
+[INFO] 08-12-2024 12:40:35 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:47)] - Page is redirected to URL
+[INFO] 08-12-2024 12:40:35 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CasepackagesAssertionsPageStarted
+[INFO] 08-12-2024 12:40:47 [main] [Pages.P07_ProfilePage.assertPackage(P07_ProfilePage.java:58)] - This Member dont have a package
+[INFO] 08-12-2024 12:40:47 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CasepackagesAssertionsPagefailed

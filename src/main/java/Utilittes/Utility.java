@@ -227,9 +227,9 @@ public class Utility {
         Calendar calendar= Calendar.getInstance();
 
         int currentYear =calendar.get(calendar.YEAR);
-        int minBirthYear = currentYear -maxAge;
-        int maxBirthYear =currentYear -mainAge;
-        int birthYear =maxBirthYear+ random.nextInt(maxBirthYear-minBirthYear +1);
+        int minBirthYear = currentYear -maxAge;//1959
+        int maxBirthYear =currentYear -mainAge;//1964
+        int birthYear =minBirthYear + random.nextInt(maxBirthYear-minBirthYear +1);
         int countryCode =(birthYear<2000) ?2 :3;
         int yearTwoDigits=birthYear %100;
         int month = 1+random.nextInt(12);
@@ -250,7 +250,7 @@ public class Utility {
     }
     public static String nationalIdForThirdPackage()
     {
-        return generateNationalID(65,75);
+        return generateNationalID(65,70);
     }
 
     /**

@@ -35,6 +35,11 @@ public class P04_HomePage {
       Utility.clickElement(driver,packages);
         return new P05_PackagesPage(driver);
     }
+    public P07_ProfilePage enterProfilePage()
+    {
+        Utility.clickElement(driver,profile);
+        return new P07_ProfilePage(driver);
+    }
 
     //Assertions
     public boolean assertPackagePage(String expectedValue)

@@ -1,0 +1,6 @@
+[INFO] 08-12-2024 16:33:07 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - null
+[INFO] 08-12-2024 16:33:09 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:48)] - chromedriver is opened
+[INFO] 08-12-2024 16:33:20 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:50)] - Page is redirected to URL
+[INFO] 08-12-2024 16:33:21 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CasepackagesAssertionsPageStarted
+[INFO] 08-12-2024 16:33:29 [main] [Pages.P07_ProfilePage.assertPackage(P07_ProfilePage.java:60)] - This Member has a package 3
+[INFO] 08-12-2024 16:33:29 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CasepackagesAssertionsPagePassed
