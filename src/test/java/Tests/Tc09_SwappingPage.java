@@ -68,6 +68,44 @@ public class Tc09_SwappingPage {
                 .navigateToHomePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابه المهن البيطرية"));
     }
+    @Test
+    public void ValidSwappingToTourGuideSyndicate() throws IOException {
+        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+                .registerWithRandomPhoneNumber()
+                .registrationWithRandomFullName()
+                .confirmRegisterData()
+                .registerWithDynamicPinCode()
+                .registerWithDynamicConfPinCode()
+                .confirmFullRegistration()
+                .navigateToHomePage()
+                .enterSyndicatePage()
+                .tourGuidesSyndicates()
+                .SyndicatesRegister()
+                .enterMemberId()
+                .enterNationalId()
+                .confirmSwapping()
+                .navigateToHomePage();
+        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("النقابة العامة للمرشدين السياحيين"));
+    }
+    @Test
+    public void ValidSwappingToAgricoultureSyndicate() throws IOException {
+        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+                .registerWithRandomPhoneNumber()
+                .registrationWithRandomFullName()
+                .confirmRegisterData()
+                .registerWithDynamicPinCode()
+                .registerWithDynamicConfPinCode()
+                .confirmFullRegistration()
+                .navigateToHomePage()
+                .enterSyndicatePage()
+                .agricultural()
+                .SyndicatesRegister()
+                .enterMemberId()
+                .confirmSwapping()
+                .navigateToHomePage();
+        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابة المهن الزراعية"));
+    }
+
 
     @Test
     public void ValidSwappingToGptsSyndicate() throws IOException {
@@ -87,32 +125,41 @@ public class Tc09_SwappingPage {
                 .navigateToHomePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابة العلاج الطبيعى"));
     }
-
-
     @Test
-    public void assertThatAllSyndicateDisplayedAsExpected() throws IOException {
-        new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
-                .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
-                .confirmLoginBTn()
-                .enterSyndicatePage();
-        Assert.assertTrue(new P08_syndicatePage(getDriver()).getSyndicateName());
-    }
-
-    @Test
-    public void ValidNavigateToSwappingSyndicatePage() throws IOException {
-        new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
-                .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
-                .confirmLoginBTn()
+    public void ValidSwappingToENGSyndicate() throws IOException {
+        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+                .registerWithRandomPhoneNumber()
+                .registrationWithRandomFullName()
+                .confirmRegisterData()
+                .registerWithDynamicPinCode()
+                .registerWithDynamicConfPinCode()
+                .confirmFullRegistration()
+                .navigateToHomePage()
                 .enterSyndicatePage()
-                .tourGuidesSyndicates()
-                .SyndicatesRegister();
-        Assert.assertTrue(new P08_syndicatePage(getDriver()).
-                verifyUrl(DataUtils.getPropertyValue("Environments.properties", "Swapping_URl")));
+                .engineer()
+                .SyndicatesRegister()
+                .confirmSwapping()
+                .navigateToHomePage();
+        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابة المهندسين"));
     }
+    @Test
+    public void ValidSwappingToEDUSyndicate() throws IOException {
+        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+                .registerWithRandomPhoneNumber()
+                .registrationWithRandomFullName()
+                .confirmRegisterData()
+                .registerWithDynamicPinCode()
+                .registerWithDynamicConfPinCode()
+                .confirmFullRegistration()
+                .navigateToHomePage()
+                .enterSyndicatePage()
+                .educational()
+                .SyndicatesRegister()
+                .confirmSwapping()
+                .navigateToHomePage();
+        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابه المهن التعليمية"));
+    }
+
 
     @AfterMethod
     public void quit() {
