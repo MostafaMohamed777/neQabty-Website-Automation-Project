@@ -24,11 +24,11 @@ import static DriverFactory.DriverFactory.getDriver;
 import static DriverFactory.DriverFactory.setUpBrowser;
 import static Utilittes.DataUtils.getPropertyValue;
 
-
 @Listeners({iInvokedMethodListenersClass.class,
         iTestResultListenersClass.class})
 public class Tc07_ProfilePage {
-    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhoneEng");
+    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhone");
+    private final String phoneNumberSyndicate= DataUtils.getJasonData("ValidRegistrationData","MobilePhoneEng");
     private final String pinCode = DataUtils.getJasonData("ValidRegistrationData","PinCode");
 
     public Tc07_ProfilePage() throws FileNotFoundException {
@@ -60,7 +60,7 @@ public class Tc07_ProfilePage {
                 .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .enterProfilePage()
-                .navigateToPackagePage();
+                .navigateToPackagePageInNeqStatus();
     }
     @Test
     public void ValidLogOut() throws IOException {
@@ -75,14 +75,25 @@ public class Tc07_ProfilePage {
                 assertHomePage(DataUtils.getPropertyValue("Environments.properties","LANDING_URL")));
     }
     @Test
-    public void packagesAssertionsPage() throws IOException {
+    public void packagesAssertionsPageInNeqMember() {
         new P03_LoginPage(getDriver())
                 .enterStaticPhoneNumber(phoneNumber)
                 .confirmLoginPhoneNumber()
                 .enterStaticPinCode(pinCode)
                 .confirmLoginBTn()
                 .enterProfilePage()
-                .navigateToPackagePage();
+                .navigateToPackagePageInNeqStatus();
+        Assert.assertTrue(new P07_ProfilePage(getDriver()).assertPackage());
+    }
+    @Test
+    public void packagesAssertionsPageInSyndicateMember() {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumberSyndicate)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterProfilePage()
+                .navigateToPackagePageInSyndicateStatus();
         Assert.assertTrue(new P07_ProfilePage(getDriver()).assertPackage());
     }
 

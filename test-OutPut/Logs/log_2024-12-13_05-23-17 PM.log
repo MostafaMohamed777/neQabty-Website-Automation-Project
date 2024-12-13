@@ -1,0 +1,10 @@
+[INFO] 13-12-2024 17:23:17 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - null
+[INFO] 13-12-2024 17:23:21 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:46)] - chromedriver is opened
+[INFO] 13-12-2024 17:23:41 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:48)] - Page is redirected to URL
+[INFO] 13-12-2024 17:23:41 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToVETSyndicateStarted
+[INFO] 13-12-2024 17:23:41 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01514504490
+[INFO] 13-12-2024 17:23:41 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01514504490
+[INFO] 13-12-2024 17:23:43 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:864679
+[INFO] 13-12-2024 17:23:43 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:864679
+[INFO] 13-12-2024 17:23:48 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:53)] - Massage is :نقابه المهن البيطرية
+[INFO] 13-12-2024 17:23:48 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToVETSyndicatePassed

@@ -1,0 +1,6 @@
+[INFO] 12-12-2024 21:14:46 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - null
+[INFO] 12-12-2024 21:14:49 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:48)] - chromedriver is opened
+[INFO] 12-12-2024 21:14:54 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:50)] - Page is redirected to URL
+[INFO] 12-12-2024 21:14:54 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CasepackagesAssertionsPageInNeqMemberStarted
+[INFO] 12-12-2024 21:15:03 [main] [Pages.P07_ProfilePage.assertPackage(P07_ProfilePage.java:63)] - This Member has a package. Total packages found: 1
+[INFO] 12-12-2024 21:15:03 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CasepackagesAssertionsPageInNeqMemberPassed

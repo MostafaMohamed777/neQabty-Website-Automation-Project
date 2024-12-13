@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -43,8 +44,15 @@ public class P02_RegistrationPage {
         Utility.sendData(driver,phoneNumberFiled,phoneNumber);
         return this;
     }
-    public P02_RegistrationPage registerWithUniqueRandomPhoneNumber() throws FileNotFoundException {
+    public P02_RegistrationPage registerWithUniqueRandomPhoneNumber() throws IOException {
         String phoneNumber = Utility.generateUniquePhoneNumber();
+        Utility.saveData("phoneNumber",phoneNumber);
+        LogsUtils.info("the generated phone number is ="+phoneNumber);
+        enterPhoneNumber(phoneNumber);
+        return this;
+    }
+    public P02_RegistrationPage registerWithRandomPhoneNumber() throws IOException {
+        String phoneNumber =Utility.generatePhoneNumber();
         Utility.saveData("phoneNumber",phoneNumber);
         LogsUtils.info("the generated phone number is ="+phoneNumber);
         enterPhoneNumber(phoneNumber);
@@ -75,7 +83,7 @@ public class P02_RegistrationPage {
         Utility.fillPinField(pinElements,PinCode);
         return this;
     }
-    public P02_RegistrationPage registerWithDynamicPinCode() throws FileNotFoundException {
+    public P02_RegistrationPage registerWithDynamicPinCode() throws IOException {
         generatedPinCode = Utility.generatePinCode(driver.findElements(pinFields));
         Utility.saveData("pinCode",generatedPinCode);
      return this;
@@ -112,7 +120,6 @@ public class P02_RegistrationPage {
        String successfulMassage =Utility.getText(driver,successfulRegister);
         LogsUtils.info("Massage is :"+ successfulMassage);
     return successfulMassage;
-
     }
     //Assertion
     public boolean checkIfConfirmationButtonClickable(String pen,String conPen)
@@ -121,7 +128,7 @@ public class P02_RegistrationPage {
         boolean arePinsValid = enterStaticPinCode(pen).equals(enterStaticConfirmPinCode(conPen));
         return confirmRegistrationBtn.isEnabled() && arePinsValid;
     }
-    public boolean checkIfConfirmationButtonClickableDynamic() throws FileNotFoundException {
+    public boolean checkIfConfirmationButtonClickableDynamic() throws IOException {
         WebElement confirmRegistrationBtn =driver.findElement(confirmRegistration);
         boolean arePinsValid = registerWithDynamicPinCode().equals(registerWithDynamicConfPinCode());
         return confirmRegistrationBtn.isEnabled() && arePinsValid;

@@ -1,0 +1,5 @@
+[INFO] 12-12-2024 22:10:41 [main] [Tests.Tc08_SyndicatePage.setUp(T08_SyndicatePage.java:43)] - null
+[INFO] 12-12-2024 22:10:47 [main] [Tests.Tc08_SyndicatePage.setUp(T08_SyndicatePage.java:45)] - chromedriver is opened
+[INFO] 12-12-2024 22:10:53 [main] [Tests.Tc08_SyndicatePage.setUp(T08_SyndicatePage.java:47)] - Page is redirected to URL
+[INFO] 12-12-2024 22:10:53 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToSyndicatePageStarted
+[INFO] 12-12-2024 22:10:59 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToSyndicatePagePassed

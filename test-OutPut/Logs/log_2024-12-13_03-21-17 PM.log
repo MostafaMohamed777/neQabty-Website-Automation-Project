@@ -1,0 +1,7 @@
+[INFO] 13-12-2024 15:21:17 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - null
+[INFO] 13-12-2024 15:21:19 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - chromedriver is opened
+[INFO] 13-12-2024 15:22:25 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:47)] - Page is redirected to URL
+[INFO] 13-12-2024 15:22:25 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToVETSyndicateStarted
+[INFO] 13-12-2024 15:22:30 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:987611
+[INFO] 13-12-2024 15:22:30 [main] [Utilittes.Utility.saveData(Utility.java:353)] - pinCodesaved with value:987611
+[INFO] 13-12-2024 15:22:36 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToVETSyndicatefailed

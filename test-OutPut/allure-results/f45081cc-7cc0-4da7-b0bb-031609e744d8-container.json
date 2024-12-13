@@ -1,0 +1,1 @@
+{"uuid":"f45081cc-7cc0-4da7-b0bb-031609e744d8","name":"Tests.Tc08_SyndicatePage.quit","children":["54a79652-04a7-4784-9cfb-77283e840f03"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734082442690,"stop":1734082442690}],"start":1734082442689,"stop":1734082442690}

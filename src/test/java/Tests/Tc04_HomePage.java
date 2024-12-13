@@ -70,6 +70,17 @@ public class Tc04_HomePage {
         Assert.assertTrue(new P04_HomePage(getDriver()).
                 assertPackagePage(DataUtils.getPropertyValue("Environments.properties","PROFILE_PAGE")));
     }
+    @Test
+    public void ValidNavigateToSyndicatePage() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumber)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterSyndicatePage();
+        Assert.assertTrue(new P04_HomePage(getDriver()).
+                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","syndicate_Page")));
+    }
 
     @AfterMethod
     public void quit()

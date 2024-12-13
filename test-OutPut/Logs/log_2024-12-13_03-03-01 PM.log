@@ -1,0 +1,5 @@
+[INFO] 13-12-2024 15:03:01 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - null
+[INFO] 13-12-2024 15:03:05 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - chromedriver is opened
+[INFO] 13-12-2024 15:03:12 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:46)] - Page is redirected to URL
+[INFO] 13-12-2024 15:03:12 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToTourGuideSyndicateStarted
+[INFO] 13-12-2024 15:03:17 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToTourGuideSyndicatePassed

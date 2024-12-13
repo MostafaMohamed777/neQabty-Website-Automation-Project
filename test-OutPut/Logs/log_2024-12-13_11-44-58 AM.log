@@ -1,0 +1,12 @@
+[INFO] 13-12-2024 11:44:58 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:43)] - null
+[INFO] 13-12-2024 11:45:00 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:45)] - chromedriver is opened
+[INFO] 13-12-2024 11:45:06 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:47)] - Page is redirected to URL
+[INFO] 13-12-2024 11:45:06 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedStarted
+[INFO] 13-12-2024 11:45:09 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 13-12-2024 11:45:10 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISنقابة العلاج الطبيعى
+[INFO] 13-12-2024 11:45:10 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISنقابة المهن الزراعية
+[INFO] 13-12-2024 11:45:11 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISنقابه المهن التعليمية
+[INFO] 13-12-2024 11:45:12 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISنقابه الاطباء البيطريين
+[INFO] 13-12-2024 11:45:13 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:79)] - Syndicate Name ISنقابة المهندسين
+[INFO] 13-12-2024 11:45:13 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Number IS6
+[INFO] 13-12-2024 11:45:13 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedPassed

@@ -1,9 +1,12 @@
 package Tests;
 
 import Pages.P03_LoginPage;
+import Pages.P06_PackageSubscribePage;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
 
+import org.checkerframework.checker.units.qual.A;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -24,6 +27,7 @@ import static Utilittes.DataUtils.getPropertyValue;
 public class Tc06_PackageSubscribe {
     private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhone");
     private final String pinCode = DataUtils.getJasonData("ValidRegistrationData","PinCode");
+
 
 
     public Tc06_PackageSubscribe() throws FileNotFoundException {
@@ -64,8 +68,16 @@ public class Tc06_PackageSubscribe {
                 .enterEmail()
                 .enterBirthDate()
                 .enterUserJob()
-                .confirmSubscribe()
-                .enterNationalIdForFirstPackage();
+                .dynamicConfirm()
+                .enterNationalIdForFirstPackage()
+                .dynamicConfirm()
+                .enterSubscribePhoneNumber()
+                .enterPromoMobileNumber()
+                .enterAddress()
+                .confirmTermsAndCondition()
+                .confirmAllRegistration()
+                .navigateToPaymentPage();
+      //  Assert.assertTrue(new P06_PackageSubscribePage(getDriver()).assertSuccessfulPackageSubscribe());
         ;
     }
     @Test
@@ -84,10 +96,18 @@ public class Tc06_PackageSubscribe {
                 .enterEmail()
                 .enterBirthDate()
                 .enterUserJob()
-                .confirmSubscribe()
-                .enterNationalIdForSecondPackage();
+                .dynamicConfirm()
+                .enterNationalIdForSecondPackage()
+                .dynamicConfirm()
+                .enterSubscribePhoneNumber()
+                .enterPromoMobileNumber()
+                .enterAddress()
+                .confirmTermsAndCondition()
+                .navigateToPaymentPage();
+       // Assert.assertTrue(new P06_PackageSubscribePage(getDriver()).assertSuccessfulPackageSubscribe());
         ;
     }
+
     @Test
     public void ValidThirdPackageSubscribe() throws IOException {
         new P03_LoginPage(getDriver())
@@ -104,9 +124,15 @@ public class Tc06_PackageSubscribe {
                 .enterEmail()
                 .enterBirthDate()
                 .enterUserJob()
-                .confirmSubscribe()
-                .enterNationalIdForThirdPackage();
-        ;
+                .dynamicConfirm()
+                .enterNationalIdForThirdPackage()
+                .dynamicConfirm()
+                .enterSubscribePhoneNumber()
+                .enterPromoMobileNumber()
+                .enterAddress()
+                .confirmTermsAndCondition()
+                .navigateToPaymentPage();
+       // Assert.assertTrue(new P06_PackageSubscribePage(getDriver()).assertSuccessfulPackageSubscribe());
     }
 
 

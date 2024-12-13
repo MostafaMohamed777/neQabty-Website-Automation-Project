@@ -2,10 +2,7 @@ package Pages;
 
 import Utilittes.LogsUtils;
 import Utilittes.Utility;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,11 +21,12 @@ public class P07_ProfilePage {
     }
 
     //Locators
-        private final By dynamicLocator =By.xpath("//app-profile-seha-packages/div/div/div");
+        private final By dynamicLocator =By.xpath("//app-profile-seha-packages/div/div/div/a/div[1]");
         private final By personalInfo=By.xpath("//app-profile-wrapper//div[2]/div//a[1]");
         private final By changePassword=By.xpath("//app-profile-wrapper//div[2]/div//a[2]");
         private final By swapping=By.xpath("//app-profile-wrapper//div[2]/div//a[3]");
         private final By packages =By.xpath("//app-profile-wrapper//div[2]/div//a[3]");
+        private final By packagesNeq =By.xpath("//app-profile-wrapper//div[2]/div//a[4]");
         private final By bills =By.xpath("//app-profile-wrapper//div[2]/div//a[5]");
         private final By Docs =By.xpath("//app-profile-wrapper//div[2]/div//a[6]");
         private final By complains =By.xpath("//app-profile-wrapper//div[2]/div//a[7]");
@@ -38,9 +36,14 @@ public class P07_ProfilePage {
 
 
     //Action
-    public P07_ProfilePage navigateToPackagePage()
+    public P07_ProfilePage navigateToPackagePageInSyndicateStatus()
     {
         Utility.clickElement(driver,packages);
+        return this;
+    }
+    public P07_ProfilePage navigateToPackagePageInNeqStatus()
+    {
+        Utility.clickElement(driver,packagesNeq);
         return this;
     }
     public P03_LoginPage enterLogOut()
@@ -51,9 +54,9 @@ public class P07_ProfilePage {
     }
 
     //Assertions
-    public boolean assertPackage() {
-        new WebDriverWait(driver, Duration.ofSeconds(15)).
-                until(ExpectedConditions.visibilityOfElementLocated(dynamicLocator));
+    public boolean assertPackage()  {
+     new WebDriverWait(driver, Duration.ofSeconds(60)).
+              until(ExpectedConditions.visibilityOfElementLocated(dynamicLocator));
         webElements =driver.findElements(dynamicLocator);
             try {
                 if (!webElements.isEmpty()) {

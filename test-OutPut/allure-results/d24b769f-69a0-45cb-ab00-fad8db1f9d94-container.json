@@ -1,0 +1,1 @@
+{"uuid":"d24b769f-69a0-45cb-ab00-fad8db1f9d94","name":"Tests.Tc06_PackageSubscribe.quit","children":["35369409-32d3-4ca3-ad35-1a169d84573d"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1733772836853,"stop":1733772836854}],"start":1733772836852,"stop":1733772836854}

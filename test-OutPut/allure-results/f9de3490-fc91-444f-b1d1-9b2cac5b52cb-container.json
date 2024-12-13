@@ -1,0 +1,1 @@
+{"uuid":"f9de3490-fc91-444f-b1d1-9b2cac5b52cb","name":"Tests.Tc09_SwappingPage.setUp","children":["a3e48ea6-cf49-46ed-978f-22e1e2c20d11"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734096464320,"stop":1734096491528}],"afters":[],"start":1734096464319,"stop":1734096491528}

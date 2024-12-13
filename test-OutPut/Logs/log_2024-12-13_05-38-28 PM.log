@@ -1,0 +1,5 @@
+[INFO] 13-12-2024 17:38:28 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - null
+[INFO] 13-12-2024 17:38:30 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:46)] - chromedriver is opened
+[INFO] 13-12-2024 17:39:04 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:48)] - Page is redirected to URL
+[INFO] 13-12-2024 17:39:04 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToGptsSyndicateStarted
+[INFO] 13-12-2024 17:39:20 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToGptsSyndicatefailed

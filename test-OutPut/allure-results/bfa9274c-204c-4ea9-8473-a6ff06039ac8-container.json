@@ -1,0 +1,1 @@
+{"uuid":"bfa9274c-204c-4ea9-8473-a6ff06039ac8","name":"Tests.Tc08_SyndicatePage.setUp","children":["9eba61c6-8d34-43b7-bc21-7d58d41dd0cf"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734037552762,"stop":1734037562419}],"afters":[],"start":1734037552761,"stop":1734037562419}

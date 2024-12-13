@@ -1,0 +1,5 @@
+[INFO] 13-12-2024 15:20:05 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - null
+[INFO] 13-12-2024 15:20:08 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - chromedriver is opened
+[INFO] 13-12-2024 15:20:28 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:47)] - Page is redirected to URL
+[INFO] 13-12-2024 15:20:28 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToVETSyndicateStarted
+[INFO] 13-12-2024 15:20:37 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToVETSyndicatefailed

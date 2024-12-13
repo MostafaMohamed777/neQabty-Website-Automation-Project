@@ -1,0 +1,1 @@
+{"uuid":"761a5c6e-a777-4f1f-8221-c756c50d4195","name":"Tests.Tc07_ProfilePage.quit","children":["ffa84e79-8e75-4488-a0d4-eba23159b679"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734030854367,"stop":1734030854367}],"start":1734030854367,"stop":1734030854367}

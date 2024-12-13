@@ -3,6 +3,7 @@ package Utilittes;
 import com.github.javafaker.Faker;
 import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
+import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,7 +36,7 @@ public class Utility {
     //ToDo:Click Element
     public static void clickElement(WebDriver driver, By locator)
     {
-        new WebDriverWait(driver, Duration.ofSeconds(8))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
@@ -69,7 +70,7 @@ public class Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
 
         try {
-            Thread.sleep(500); // Small delay for animations/transitions
+            Thread.sleep(600); // Small delay for animations/transitions
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -206,7 +207,7 @@ public class Utility {
     /**
      * Helper method to generate a phone number.
      */
-    private static String generatePhoneNumber()
+    public static String generatePhoneNumber()
     {
         // Valid prefixes for Egyptian mobile numbers
         String[] prefixes = {"010", "011", "012", "015"};
@@ -242,7 +243,7 @@ public class Utility {
     }
     public static String nationalIdForFirstPackage()
     {
-        return generateNationalID(0,59);
+        return generateNationalID(18,59);
     }
     public static String nationalIdForSecoundPackage()
     {
@@ -279,6 +280,26 @@ public class Utility {
     {
         String email=faker.internet().emailAddress();
         return email;
+    }
+    /**
+     * Generates a random MEmber ID using Faker.
+     */
+    //ToDo: generate random  Member Id
+    public static String generateMemberId()
+    {
+        String MemberId = String.valueOf(faker.idNumber());
+        return MemberId;
+    }
+
+
+    /**
+     * Generates a random Address using Faker.
+     */
+    //ToDo: generate random  Adress
+    public static String generateAddress()
+    {
+        String Address =faker.address().fullAddress();
+        return Address;
     }
 
     // ======================= PIN Code Handling ======================= //
@@ -324,28 +345,32 @@ public class Utility {
      * saving data in properties File .
      */
     //ToDo : Save data to the properties file
-    public static void saveData(String key,String value) throws FileNotFoundException {
-        try (FileOutputStream output =new FileOutputStream("src/test/resources/testData.properties",true)){
-            Properties properties=new Properties();
-            properties.setProperty(key,value);
-            properties.store(output,null);
-            LogsUtils.info(key+"saved with value:"+value);
-        } catch (IOException e) {
-            LogsUtils.error("Field to save data :"+e.getMessage());
+    public static void saveData(String key,String value) throws IOException {
+        try (FileInputStream fileInputStream = new FileInputStream("src/test/resources/testData.properties")) {
+            Properties properties = new Properties();
+            properties.load(fileInputStream);
+            properties.setProperty(key, value);
+            try (FileOutputStream fileOutputStream = new FileOutputStream("src/test/resources/testData.properties")) {
+                properties.store(fileOutputStream, null);
+                LogsUtils.info(key + "saved with value:" + value);
+            } catch (IOException e) {
+                LogsUtils.error("Field to save data :" + e.getMessage());
+            }
         }
     }
+
     //ToDo: Retrieve data from the properties file
-    public static String getData(String key)
-    {
-        try (FileInputStream file =new FileInputStream("src/test/resources/testData.properties")) {
-            Properties properties=new Properties();
+
+    public static String getData(String key) {
+        try (FileInputStream file = new FileInputStream("src/test/resources/testData.properties")) {
+            Properties properties = new Properties();
             properties.load(file);
-            String value=properties.getProperty(key);
-            LogsUtils.info("Retrieved"+key+"with value"+value);
+            String value = properties.getProperty(key);
+            LogsUtils.info("Retrieved " + key + " with value: " + value);
             return value;
         } catch (IOException e) {
-           LogsUtils.error("Failed to retrieve data for key:"+key+ "Erorr"+e.getMessage());
-           return null;
+            LogsUtils.error("Failed to retrieve data for key: " + key + ". Error: " + e.getMessage());
+            return null;
         }
     }
     /*

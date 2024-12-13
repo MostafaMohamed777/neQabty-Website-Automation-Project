@@ -19,8 +19,12 @@ public class P06_PackageSubscribePage {
     private final By birthDayValue =By.xpath("//tr[1]/td[3]/span");
     private final By confirmSubscribe =By.cssSelector("button[type=\"submit\"]");
     private final By nationalId =By.id("nationalId");
-    private final By confirmNationalId =By.cssSelector("button[type=\"submit\"]");
-
+    private final By subscribePhoneNumber=By.id("phoneNumber");
+    private final By promoMobileNumber =By.id("promoMobileNumber");
+    private final By subscribeAddress=By.id("address");
+    private final By checkBox =By.id("agreeTerms");
+    private final By confirmBtn=By.cssSelector("button[type=\"button\"]");
+    private final By successfulMassage=By.xpath("//h4[text()=\"تم تسجيل الإشتراك بنجاح\"]");
 
 
     //Variables
@@ -68,7 +72,7 @@ public class P06_PackageSubscribePage {
         Utility.sendData(driver,userJob,name);
         return this;
     }
-    public P06_PackageSubscribePage confirmSubscribe()
+    public P06_PackageSubscribePage dynamicConfirm()
     {
         Utility.scrollToElement(driver,confirmSubscribe);
         Utility.clickElement(driver,confirmSubscribe);
@@ -92,8 +96,48 @@ public class P06_PackageSubscribePage {
         Utility.sendData(driver,nationalId,nationalIDForThirdPackage);
         return this;
     }
-
+    public P06_PackageSubscribePage enterSubscribePhoneNumber()
+    {
+        String PhoneNumber= Utility.generatePhoneNumber();
+        Utility.sendData(driver,subscribePhoneNumber,PhoneNumber);
+        return this;
+    }
+    public P06_PackageSubscribePage enterPromoMobileNumber()
+    {
+        String PhoneNumber= Utility.generatePhoneNumber();
+        Utility.sendData(driver,promoMobileNumber,PhoneNumber);
+        return this;
+    }
+    public P06_PackageSubscribePage enterAddress()
+    {
+        String address= Utility.generateAddress();
+        Utility.sendData(driver,subscribeAddress,address);
+        return this;
+    }
+    public P06_PackageSubscribePage confirmTermsAndCondition()
+    {
+        Utility.scrollToElement(driver,checkBox);
+        Utility.clickElement(driver,checkBox);
+        return this;
+    }
+    public P06_PackageSubscribePage confirmAllRegistration()
+    {
+        Utility.scrollToElement(driver,confirmSubscribe);
+        Utility.clickElement(driver,confirmSubscribe);
+        return this;
+    }
+    public P06_PackageSubscribePage navigateToPaymentPage()
+    {
+        Utility.scrollToElement(driver,confirmBtn);
+        Utility.clickElement(driver,confirmBtn);
+        return this;
+    }
 
     //Assertions
+    public boolean assertSuccessfulPackageSubscribe()
+    {
+       String successfulMass = Utility.getText(driver,successfulMassage);
+       return successfulMass.equals("تم تسجيل الإشتراك بنجاح");
+    }
 
 }

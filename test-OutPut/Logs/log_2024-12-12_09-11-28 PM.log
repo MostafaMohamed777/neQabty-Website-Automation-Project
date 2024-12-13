@@ -1,0 +1,5 @@
+[INFO] 12-12-2024 21:11:28 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:46)] - null
+[INFO] 12-12-2024 21:11:32 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:48)] - chromedriver is opened
+[INFO] 12-12-2024 21:11:38 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:50)] - Page is redirected to URL
+[INFO] 12-12-2024 21:11:38 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CasepackagesAssertionsPageInSyndicateMemberStarted
+[INFO] 12-12-2024 21:12:17 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CasepackagesAssertionsPageInSyndicateMemberfailed

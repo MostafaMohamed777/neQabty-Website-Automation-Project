@@ -1,0 +1,11 @@
+[INFO] 12-12-2024 23:05:53 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:43)] - null
+[INFO] 12-12-2024 23:05:57 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:45)] - chromedriver is opened
+[INFO] 12-12-2024 23:06:02 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:47)] - Page is redirected to URL
+[INFO] 12-12-2024 23:06:02 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedStarted
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:77)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 12-12-2024 23:06:05 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedPassed

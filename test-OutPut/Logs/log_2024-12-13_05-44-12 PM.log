@@ -1,0 +1,10 @@
+[INFO] 13-12-2024 17:44:12 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - null
+[INFO] 13-12-2024 17:44:14 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:46)] - chromedriver is opened
+[INFO] 13-12-2024 17:44:32 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:48)] - Page is redirected to URL
+[INFO] 13-12-2024 17:44:32 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToGptsSyndicateStarted
+[INFO] 13-12-2024 17:44:39 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01527344160
+[INFO] 13-12-2024 17:44:39 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01527344160
+[INFO] 13-12-2024 17:44:40 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:717464
+[INFO] 13-12-2024 17:44:40 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:717464
+[INFO] 13-12-2024 17:44:45 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:53)] - Massage is :نقابة العلاج الطبيعى
+[INFO] 13-12-2024 17:44:45 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToGptsSyndicatePassed
