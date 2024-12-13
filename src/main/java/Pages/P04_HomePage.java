@@ -23,6 +23,9 @@ public class P04_HomePage {
     private final By profile =By.xpath("//div[2]/ul/li[2]");
     private final By logout =By.xpath("//div[2]/ul/li[3]");
     private final By syndicateName =By.xpath("//app-home-banner//div/h3");
+    private final By subscribeBtn=By.tagName("h4");
+    private final By subscribeConfBtn=By.cssSelector("input[type=\"radio\"]");
+    private final By ConfBtn=By.cssSelector("button[type=\"submit\"]");
 
     //variables
     private final WebDriver driver;
@@ -53,6 +56,25 @@ public class P04_HomePage {
         LogsUtils.info("Massage is :"+ successfulMassage);
         return successfulMassage;
     }
+    public P04_HomePage enterSubscribePage()
+    {
+        Utility.generalWait(driver,subscribeBtn,10);
+        Utility.clickElement(driver,subscribeBtn);
+        return this;
+    }
+    public P04_HomePage enterSubscribeBtn()
+    {
+        Utility.generalWait(driver,subscribeConfBtn,5);
+        driver.findElement(subscribeConfBtn).click();
+        return this;
+    }
+    public P_10PaymentPage navigateToPaymentPage()
+    {
+        driver.findElement(ConfBtn).click();
+        return new P_10PaymentPage(driver);
+    }
+
+
 
     //Assertions
     public boolean assertPackagePage(String expectedValue)

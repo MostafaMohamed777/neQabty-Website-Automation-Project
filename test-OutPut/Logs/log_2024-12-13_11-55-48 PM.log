@@ -1,0 +1,5 @@
+[INFO] 13-12-2024 23:55:48 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:43)] - null
+[INFO] 13-12-2024 23:55:52 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:45)] - chromedriver is opened
+[INFO] 13-12-2024 23:56:08 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:47)] - Page is redirected to URL
+[INFO] 13-12-2024 23:56:08 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToSubscribePageStarted
+[INFO] 13-12-2024 23:56:11 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToSubscribePagePassed

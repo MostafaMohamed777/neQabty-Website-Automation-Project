@@ -8,7 +8,7 @@ public class P01_LandingPge {
 
     //Locators
     private final By loginBtn =By.xpath("//*[text()=\"تسجيل الدخول\"]");
-    private final By registerBtn =By.xpath("//div[8]/div/div[1]/div/div[2]/a");
+    private final By registerBtn =By.xpath("//div/div[4]//div//a");
 
     //Variables
     private WebDriver driver;

@@ -1,5 +1,6 @@
 package Tests;
 
+import Pages.P01_LandingPge;
 import Pages.P03_LoginPage;
 import Pages.P04_HomePage;
 import Utilittes.DataUtils;
@@ -23,7 +24,7 @@ import static Utilittes.DataUtils.getPropertyValue;
 @Listeners({iInvokedMethodListenersClass.class,
         iTestResultListenersClass.class})
 public class Tc04_HomePage {
-    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhone");
+    private final String phoneNumber= DataUtils.getJasonData("ValidRegistrationData","MobilePhoneVET");
     private final String pinCode = DataUtils.getJasonData("ValidRegistrationData","PinCode");
 
 
@@ -42,7 +43,7 @@ public class Tc04_HomePage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL"));
+        getDriver().get(getPropertyValue("Environments.properties", "LANDING_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -80,6 +81,18 @@ public class Tc04_HomePage {
                 .enterSyndicatePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).
                 assertPackagePage(DataUtils.getPropertyValue("Environments.properties","syndicate_Page")));
+    }
+    @Test
+    public void ValidNavigateToSubscribePage() throws IOException {
+      new P01_LandingPge(getDriver())
+              .clickOnLoginBtn()
+              .enterStaticPhoneNumber(phoneNumber)
+              .confirmLoginPhoneNumber()
+              .enterStaticPinCode(pinCode)
+              .confirmLoginBTn()
+              .enterSubscribePage()
+              .enterSubscribeBtn()
+              .navigateToPaymentPage();
     }
 
     @AfterMethod

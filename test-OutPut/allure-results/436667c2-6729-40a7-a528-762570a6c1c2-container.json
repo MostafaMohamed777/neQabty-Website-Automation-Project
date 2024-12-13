@@ -1,0 +1,1 @@
+{"uuid":"436667c2-6729-40a7-a528-762570a6c1c2","name":"Tests.Tc04_HomePage.quit","children":["45959bb0-d970-4da2-b2fc-2a7c7e66fe4a"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734126710883,"stop":1734126710883}],"start":1734126710882,"stop":1734126710883}
