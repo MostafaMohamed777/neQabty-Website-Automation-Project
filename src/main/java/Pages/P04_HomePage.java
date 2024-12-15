@@ -4,10 +4,6 @@ import Utilittes.LogsUtils;
 import Utilittes.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class P04_HomePage {
 
@@ -68,10 +64,10 @@ public class P04_HomePage {
         driver.findElement(subscribeConfBtn).click();
         return this;
     }
-    public P_10PaymentPage navigateToPaymentPage()
+    public P10_PaymentPage navigateToPaymentPage()
     {
         driver.findElement(ConfBtn).click();
-        return new P_10PaymentPage(driver);
+        return new P10_PaymentPage(driver);
     }
 
 
