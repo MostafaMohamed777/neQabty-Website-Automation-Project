@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 public class P10_PaymentPage {
     
     //locators
-    private final By opayCode=By.xpath("//span[text()=\"منافذOpay\"]");
+    private final By opayCode=By.xpath("//form/div/div[1]//input");
     private final By opayCard=By.xpath("//form/div/div[2]//input");
-    private final By neqabtyWallet=By.xpath("//span[text()=\"محفظه نقابتي\"]");
-    private final By fawrey=By.xpath("//span[text()=\"منافذ Fawry\"]");
+    private final By neqabtyWallet=By.xpath("//form/div/div[3]//input");
+    private final By fawrey=By.xpath("//form/div/div[4]//input");
     private final By cridet=By.xpath("//form/div/div[5]//input");
 
     //variables
