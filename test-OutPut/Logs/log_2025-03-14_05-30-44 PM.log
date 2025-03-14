@@ -1,0 +1,5 @@
+[INFO] 14-03-2025 17:30:44 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:37)] - null
+[INFO] 14-03-2025 17:30:48 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:39)] - chromedriver is opened
+[INFO] 14-03-2025 17:30:50 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:41)] - Page is redirected to URL
+[INFO] 14-03-2025 17:31:21 [main] [Pages.P10_PaymentPage.getTotalAmountForReset(P10_PaymentPage.java:129)] - Massage is :207.00
+[INFO] 14-03-2025 17:31:22 [main] [Pages.P10_PaymentPage.getTotalAmountForSystem(P10_PaymentPage.java:136)] - Massage is :207.00

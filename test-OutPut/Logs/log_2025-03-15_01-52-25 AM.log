@@ -1,0 +1,4 @@
+[INFO] 15-03-2025 01:52:25 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:38)] - null
+[INFO] 15-03-2025 01:52:28 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:40)] - chromedriver is opened
+[INFO] 15-03-2025 01:52:32 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:42)] - Page is redirected to URL
+[INFO] 15-03-2025 01:53:21 [main] [Pages.P10_PaymentPage.getMassageForOPayCard(P10_PaymentPage.java:135)] - Massage is :EGP

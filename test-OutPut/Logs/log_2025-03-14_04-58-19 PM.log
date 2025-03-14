@@ -1,0 +1,4 @@
+[INFO] 14-03-2025 16:58:19 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:37)] - null
+[INFO] 14-03-2025 16:58:21 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:39)] - chromedriver is opened
+[INFO] 14-03-2025 16:58:24 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:41)] - Page is redirected to URL
+[INFO] 14-03-2025 16:58:59 [main] [Pages.P10_PaymentPage.getMassageForOpayAndFawery(P10_PaymentPage.java:102)] - Massage is :الفاتورة الكلية

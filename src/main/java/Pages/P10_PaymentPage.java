@@ -23,8 +23,23 @@ public class P10_PaymentPage {
     private final By deliveryNotes=By.id("deliveryNotes");
     private final By ConfBtn=By.cssSelector("button[type=\"submit\"]");
     private final By assertionKey=By.xpath("//div/div[2]/div[1]/div[1]/h6");
+    private final By TotalAmountInReset=By.xpath("//app-success-code/div/div[2]/div/div[2]//p/span[1]");
+    private final By TotalAmountInSystem=By.xpath("//app-success-code/div//div/div[3]/div/div/p/span[1]\n");
+    private final By TotalAmountForSystemWithDilevreyFees =By.xpath("//app-inquiry/div/div/div[3]/div/div/p/span[1]");
+    private final By TotalAmountInOPayCard =By.xpath("//*[@id=\"app\"]/div//p/text()");
     private final By assertionKeyForGeidea=By.xpath("//*[@id=\"geideaModalForm\"]/div[1]/div/span");
     private final By assertionKeyForOpayCard=By.xpath("//*[@id=\"app\"]//p/span");
+    private final By gedieaCardNumber=By.cssSelector("[name=\"number\"]");
+    private final By opayCardNumber=By.cssSelector("[placeholder=\"Card Number\"]");
+    private final By gedieaExpiryDay=By.cssSelector("[name=\"expiry\"]");
+    private final By opayExpiryMonth=By.cssSelector("[placeholder=\"Expiry Month [MM]\"]");
+    private final By opayExpiryYear=By.cssSelector("[placeholder=\"Expiry Year [YY]\"]");
+    private final By gedieaCvv=By.cssSelector("[name=\"cvv\"]");
+    private final By opayCvv=By.cssSelector("[placeholder=\"Card Security Code [CVV]\"]");
+    private final By gedieaCardName=By.cssSelector("[name=\"owner\"]");
+    private final By opayCardName=By.cssSelector("[placeholder=\"Card Holder Name\"]");
+    private final By gedieaConfirmPayment=By.id("payButton");
+    private final By opayConfirmPayment=By.xpath("//*[@id=\"app\"]/div//button[2]");
 
 
     //variables
@@ -97,7 +112,7 @@ public class P10_PaymentPage {
     }
     public String getMassageForOpayAndFawery()
     {
-        Utility.generalWait(driver, gediea,10);
+        Utility.generalWait(driver, assertionKey,10);
         String successfulMassage =Utility.getText(driver,assertionKey);
         LogsUtils.info("Massage is :"+ successfulMassage);
         return successfulMassage;
@@ -111,6 +126,120 @@ public class P10_PaymentPage {
         LogsUtils.info("Massage is :"+ successfulMassage);
         return successfulMassage;
     }
+    public String getMassageForOPayCard()
+    {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.urlContains("opaycheckout"));
+        Utility.generalWait(driver,assertionKeyForOpayCard,5);
+        String successfulMassage =Utility.getText(driver,assertionKeyForOpayCard);
+        LogsUtils.info("Massage is :"+ successfulMassage);
+        return successfulMassage;
+    }
+    public String getTotalAmountForReset()
+    {
+        Utility.generalWait(driver, TotalAmountInReset,10);
+        String successfulMassage =Utility.getText(driver,TotalAmountInReset);
+        LogsUtils.info("Massage is :"+ successfulMassage);
+        return successfulMassage;
+    }
+    public String getTotalAmountForSystemWithDilevreyFees()
+    {
+        Utility.generalWait(driver, TotalAmountInSystem,10);
+        String successfulMassage =Utility.getText(driver,TotalAmountInSystem);
+        LogsUtils.info("Massage is :"+ successfulMassage);
+        return successfulMassage;
+    }
+    public String getTotalAmountForOpayCard()
+    {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.urlContains("opaycheckout"));
+        Utility.generalWait(driver,TotalAmountInOPayCard,35);
+        Utility.generalWait(driver, TotalAmountInOPayCard,10);
+        String successfulMassage =Utility.getText(driver,TotalAmountInOPayCard);
+        LogsUtils.info("Massage is :"+ successfulMassage);
+        return successfulMassage;
+    }
+
+    public String getTotalAmountInSystemWithDilevreyFees()
+    {
+        Utility.generalWait(driver,TotalAmountForSystemWithDilevreyFees,5);
+        String successfulMassage =Utility.getText(driver,TotalAmountForSystemWithDilevreyFees);
+        LogsUtils.info("Massage is :"+ successfulMassage);
+        return successfulMassage;
+    }
+
+
+    public P10_PaymentPage enterGedieaCardNumber(String CardNumber)
+    {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.urlContains("geidea"));
+        Utility.sendData(driver,gedieaCardNumber,CardNumber);
+        return this;
+    }
+    public P10_PaymentPage enterGedieaExpiryDay(String expiryDay)
+    {
+        Utility.scrollToElement(driver,gedieaExpiryDay);
+        Utility.sendData(driver,gedieaExpiryDay,expiryDay);
+        return this;
+    }
+    public P10_PaymentPage enterGedieaCvv(String Cvv)
+    {
+        Utility.scrollToElement(driver,gedieaCvv);
+        Utility.sendData(driver,gedieaCvv,Cvv);
+        return this;
+    }
+    public P10_PaymentPage enterGedieaCardName()
+    {
+        Utility.scrollToElement(driver,gedieaCardName);
+        Utility.sendData(driver,gedieaCardName,"Mostafa Moo");
+        return this;
+    }
+    public P10_PaymentPage confirmGedieaPayment()
+    {
+        Utility.scrollToElement(driver,gedieaConfirmPayment);
+        Utility.clickElement(driver,gedieaConfirmPayment);
+        return this;
+    }
+
+    public P10_PaymentPage enterOpayCardNumber(String CardNumber)
+    {
+        new WebDriverWait(driver, Duration.ofSeconds(15))
+                .until(ExpectedConditions.urlContains("opaycheckout"));
+        Utility.generalWait(driver,opayCardNumber,35);
+        Utility.scrollToElement(driver,opayCardNumber);
+        Utility.sendData(driver,opayCardNumber,CardNumber);
+        return this;
+    }
+    public P10_PaymentPage enterOpayExpiryMonth(String expiryMonth)
+    {
+        Utility.scrollToElement(driver,opayExpiryMonth);
+        Utility.sendData(driver,opayExpiryMonth,expiryMonth);
+        return this;
+    }
+    public P10_PaymentPage enterOpayExpiryYear(String expiryYear)
+    {
+        Utility.scrollToElement(driver,opayExpiryYear);
+        Utility.sendData(driver,opayExpiryYear,expiryYear);
+        return this;
+    }
+    public P10_PaymentPage enterOpayCvv(String Cvv)
+    {
+        Utility.scrollToElement(driver,opayCvv);
+        Utility.sendData(driver,opayCvv,Cvv);
+        return this;
+    }
+    public P10_PaymentPage enterOpayCardName()
+    {
+        Utility.scrollToElement(driver,opayCardName);
+        Utility.sendData(driver,opayCardName,"Mostafa Moo");
+        return this;
+    }
+    public P10_PaymentPage confirmOpayPayment()
+    {
+        Utility.scrollToElement(driver,opayConfirmPayment);
+        Utility.clickElement(driver,opayConfirmPayment);
+        return this;
+    }
 
     //Assertions
     public boolean assertMassageForOpayAndFawery()
@@ -121,18 +250,19 @@ public class P10_PaymentPage {
     {
         return  getMassageForGeidea().equals("NEQABTY");
     }
-    public String getMassageForOPayCard()
-    {
-        new WebDriverWait(driver, Duration.ofSeconds(15))
-                .until(ExpectedConditions.urlContains("opaycheckout"));
-        Utility.generalWait(driver,assertionKeyForOpayCard,5);
-        String successfulMassage =Utility.getText(driver,assertionKeyForOpayCard);
-        LogsUtils.info("Massage is :"+ successfulMassage);
-        return successfulMassage;
-    }
+
     public boolean assertMassageForOpayCard()
     {
         return getMassageForOPayCard().equals("EGP");
     }
+    public boolean assertTotalAmount()
+    {
+        return getTotalAmountForReset().equals(getTotalAmountForSystemWithDilevreyFees());
+    }
+    public boolean assertTotalAmountForOpayCard()
+    {
+        return getTotalAmountInSystemWithDilevreyFees().equals(getTotalAmountForOpayCard());
+    }
+
 
 }
