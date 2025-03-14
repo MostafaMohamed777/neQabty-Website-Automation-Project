@@ -17,8 +17,7 @@ import java.time.Duration;
 import Listeners.iInvokedMethodListenersClass;
 import Listeners.iTestResultListenersClass;
 
-import static DriverFactory.DriverFactory.getDriver;
-import static DriverFactory.DriverFactory.setUpBrowser;
+import static DriverFactory.DriverFactory.*;
 import static Utilittes.DataUtils.getPropertyValue;
 
 @Listeners({iInvokedMethodListenersClass.class,
@@ -43,7 +42,7 @@ public class Tc04_HomePage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LANDING_URL_STAGING"));
+        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -63,24 +62,24 @@ public class Tc04_HomePage {
     @Test
     public void ValidNavigateToProfilePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterProfilePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).
-                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","PROFILE_PAGE")));
+                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","PROFILE_PAGE_Staging")));
     }
     @Test
     public void ValidNavigateToSyndicatePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterSyndicatePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).
-                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","syndicate_Page")));
+                assertPackagePage(DataUtils.getPropertyValue("Environments.properties","syndicate_Page_staging")));
     }
     @Test
     public void ValidNavigateToSubscribePage() throws IOException {
@@ -98,6 +97,6 @@ public class Tc04_HomePage {
     @AfterMethod
     public void quit()
     {
-        // quitDriver();
+        quitDriver();
     }
 }

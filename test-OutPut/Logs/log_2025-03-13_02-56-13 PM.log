@@ -1,0 +1,9 @@
+[INFO] 13-03-2025 14:56:13 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:41)] - null
+[INFO] 13-03-2025 14:56:15 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - chromedriver is opened
+[INFO] 13-03-2025 14:56:17 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - Page is redirected to URL
+[INFO] 13-03-2025 14:56:18 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToVETSyndicateStarted
+[INFO] 13-03-2025 14:56:18 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01062105730
+[INFO] 13-03-2025 14:56:18 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01062105730
+[INFO] 13-03-2025 14:56:24 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:139834
+[INFO] 13-03-2025 14:56:24 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:139834
+[INFO] 13-03-2025 14:56:31 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToVETSyndicatefailed

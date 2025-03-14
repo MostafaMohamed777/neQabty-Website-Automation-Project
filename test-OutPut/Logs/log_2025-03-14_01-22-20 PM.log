@@ -1,0 +1,9 @@
+[INFO] 14-03-2025 13:22:20 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:41)] - null
+[INFO] 14-03-2025 13:22:22 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - chromedriver is opened
+[INFO] 14-03-2025 13:22:24 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - Page is redirected to URL
+[INFO] 14-03-2025 13:22:24 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToENGSyndicateStarted
+[INFO] 14-03-2025 13:22:24 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01561976916
+[INFO] 14-03-2025 13:22:24 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01561976916
+[INFO] 14-03-2025 13:22:30 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:998869
+[INFO] 14-03-2025 13:22:30 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:998869
+[INFO] 14-03-2025 13:23:06 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToENGSyndicatefailed

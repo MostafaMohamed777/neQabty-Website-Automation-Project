@@ -43,14 +43,14 @@ public class Tc01_LandingPage {
         new P01_LandingPge(getDriver())
                 .clickOnLoginBtn();
         Assert.assertTrue(new P01_LandingPge(getDriver()).
-                assertLoginPage(getPropertyValue("Environments.properties", "LOGIN_URL")));
+                assertLoginPage(getPropertyValue("Environments.properties", "LOGIN_URL_STAGING")));
     }
     @Test
     public void RegisterBtnTC() throws IOException {
         new P01_LandingPge(getDriver())
                 .clickOnRegisterBtn();
         Assert.assertTrue(new P01_LandingPge(getDriver())
-                .assertRegisterPage(getPropertyValue("Environments.properties","REGISTER_URL")));
+                .assertRegisterPage(getPropertyValue("Environments.properties","REGISTER_URL_STAGING")));
     }
 
     @AfterMethod

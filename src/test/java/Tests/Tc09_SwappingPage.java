@@ -1,9 +1,6 @@
 package Tests;
 
-import Pages.P01_LandingPge;
-import Pages.P03_LoginPage;
-import Pages.P04_HomePage;
-import Pages.P08_syndicatePage;
+import Pages.*;
 import Utilittes.DataUtils;
 import Utilittes.LogsUtils;
 import org.testng.Assert;
@@ -18,8 +15,7 @@ import java.time.Duration;
 import Listeners.iInvokedMethodListenersClass;
 import Listeners.iTestResultListenersClass;
 
-import static DriverFactory.DriverFactory.getDriver;
-import static DriverFactory.DriverFactory.setUpBrowser;
+import static DriverFactory.DriverFactory.*;
 import static Utilittes.DataUtils.getPropertyValue;
 
 @Listeners({iInvokedMethodListenersClass.class,
@@ -44,7 +40,7 @@ public class Tc09_SwappingPage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LANDING_URL_STAGING"));
+        getDriver().get(getPropertyValue("Environments.properties", "REGISTER_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -52,7 +48,7 @@ public class Tc09_SwappingPage {
 
     @Test
     public void ValidSwappingToVETSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -70,7 +66,7 @@ public class Tc09_SwappingPage {
     }
     @Test
     public void ValidSwappingToTourGuideSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -81,6 +77,8 @@ public class Tc09_SwappingPage {
                 .enterSyndicatePage()
                 .tourGuidesSyndicates()
                 .SyndicatesRegister()
+               // .enterStaticMemberId("17855")
+               // .enterStaticNationalId("28509032301971")
                 .enterMemberId()
                 .enterNationalId()
                 .confirmSwapping()
@@ -89,7 +87,7 @@ public class Tc09_SwappingPage {
     }
     @Test
     public void ValidSwappingToAgricoultureSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -101,6 +99,7 @@ public class Tc09_SwappingPage {
                 .agricultural()
                 .SyndicatesRegister()
                 .enterMemberId()
+                 //enterStaticMemberId("900494")
                 .confirmSwapping()
                 .navigateToHomePage();
         Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابة المهن الزراعية"));
@@ -109,7 +108,7 @@ public class Tc09_SwappingPage {
 
     @Test
     public void ValidSwappingToGptsSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -127,7 +126,7 @@ public class Tc09_SwappingPage {
     }
     @Test
     public void ValidSwappingToENGSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -144,7 +143,7 @@ public class Tc09_SwappingPage {
     }
     @Test
     public void ValidSwappingToEDUSyndicate() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnRegisterBtn()
+        new P02_RegistrationPage(getDriver())
                 .registerWithRandomPhoneNumber()
                 .registrationWithRandomFullName()
                 .confirmRegisterData()
@@ -157,12 +156,12 @@ public class Tc09_SwappingPage {
                 .SyndicatesRegister()
                 .confirmSwapping()
                 .navigateToHomePage();
-        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابه المهن التعليمية"));
+        Assert.assertTrue(new P04_HomePage(getDriver()).assertSyndicateName("نقابة المهن التعليمية"));
     }
 
 
     @AfterMethod
     public void quit() {
-        // quitDriver();
+        //quitDriver();
     }
 }

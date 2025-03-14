@@ -1,0 +1,10 @@
+[INFO] 14-03-2025 13:25:45 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:41)] - null
+[INFO] 14-03-2025 13:25:47 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - chromedriver is opened
+[INFO] 14-03-2025 13:25:50 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - Page is redirected to URL
+[INFO] 14-03-2025 13:25:50 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToEDUSyndicateStarted
+[INFO] 14-03-2025 13:25:50 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01590093480
+[INFO] 14-03-2025 13:25:50 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01590093480
+[INFO] 14-03-2025 13:25:56 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:739673
+[INFO] 14-03-2025 13:25:56 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:739673
+[INFO] 14-03-2025 13:26:01 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:52)] - Massage is :نقابة المهن التعليمية
+[INFO] 14-03-2025 13:26:01 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToEDUSyndicatefailed

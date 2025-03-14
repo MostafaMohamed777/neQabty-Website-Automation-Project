@@ -1,0 +1,6 @@
+[INFO] 14-03-2025 14:43:11 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 14-03-2025 14:43:14 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:43:16 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:43:16 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToProfilePageStarted
+[INFO] 14-03-2025 14:43:16 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01505494840
+[INFO] 14-03-2025 14:43:43 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToProfilePagefailed

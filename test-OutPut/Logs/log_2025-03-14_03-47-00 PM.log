@@ -1,0 +1,3 @@
+[INFO] 14-03-2025 15:47:00 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:35)] - null
+[INFO] 14-03-2025 15:47:02 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:37)] - chromedriver is opened
+[INFO] 14-03-2025 15:47:06 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:39)] - Page is redirected to URL

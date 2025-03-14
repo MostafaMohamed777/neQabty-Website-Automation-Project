@@ -1,0 +1,113 @@
+[INFO] 14-03-2025 14:37:17 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:45)] - null
+[INFO] 14-03-2025 14:37:19 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:47)] - chromedriver is opened
+[INFO] 14-03-2025 14:37:22 [main] [Tests.Tc02_RegistrationPage.setUp(Tc02_RegistrationPage.java:49)] - Page is redirected to URL
+[INFO] 14-03-2025 14:37:22 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidDynamicRegistrationStarted
+[INFO] 14-03-2025 14:37:44 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01012865777
+[INFO] 14-03-2025 14:37:44 [main] [Pages.P02_RegistrationPage.registerWithUniqueRandomPhoneNumber(P02_RegistrationPage.java:50)] - the generated phone number is =01012865777
+[INFO] 14-03-2025 14:37:46 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:541472
+[INFO] 14-03-2025 14:37:46 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:541472
+[INFO] 14-03-2025 14:37:48 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidDynamicRegistrationPassed
+[INFO] 14-03-2025 14:37:48 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:42)] - null
+[INFO] 14-03-2025 14:37:50 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:37:53 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:37:53 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLoginCycleStarted
+[INFO] 14-03-2025 14:38:16 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:38:16 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 541472
+[INFO] 14-03-2025 14:38:18 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidLoginCyclePassed
+[INFO] 14-03-2025 14:38:18 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 14-03-2025 14:38:20 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:38:25 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:38:25 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToSyndicatePageStarted
+[INFO] 14-03-2025 14:38:25 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:38:48 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToSyndicatePagefailed
+[INFO] 14-03-2025 14:38:49 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 14-03-2025 14:38:51 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:38:55 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:38:55 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToProfilePageStarted
+[INFO] 14-03-2025 14:38:55 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:39:24 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToProfilePagefailed
+[INFO] 14-03-2025 14:39:25 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:45)] - null
+[INFO] 14-03-2025 14:39:26 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:47)] - chromedriver is opened
+[INFO] 14-03-2025 14:39:31 [main] [Tests.Tc07_ProfilePage.setUp(Tc07_ProfilePage.java:49)] - Page is redirected to URL
+[INFO] 14-03-2025 14:39:31 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLogOutStarted
+[INFO] 14-03-2025 14:39:31 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:39:36 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 541472
+[INFO] 14-03-2025 14:39:40 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidLogOutPassed
+[INFO] 14-03-2025 14:39:40 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:42)] - null
+[INFO] 14-03-2025 14:39:42 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:39:47 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:39:47 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToSwappingSyndicatePageStarted
+[INFO] 14-03-2025 14:39:47 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:39:52 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 541472
+[INFO] 14-03-2025 14:39:57 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToSwappingSyndicatePagePassed
+[INFO] 14-03-2025 14:39:57 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:42)] - null
+[INFO] 14-03-2025 14:39:59 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:40:03 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:40:03 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToSyndicatePageStarted
+[INFO] 14-03-2025 14:40:04 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:40:08 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 541472
+[INFO] 14-03-2025 14:40:10 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToSyndicatePagePassed
+[INFO] 14-03-2025 14:40:10 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:42)] - null
+[INFO] 14-03-2025 14:40:12 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:44)] - chromedriver is opened
+[INFO] 14-03-2025 14:40:16 [main] [Tests.Tc08_SyndicatePage.setUp(Tc08_SyndicatePage.java:46)] - Page is redirected to URL
+[INFO] 14-03-2025 14:40:16 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedStarted
+[INFO] 14-03-2025 14:40:16 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01012865777
+[INFO] 14-03-2025 14:40:21 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 541472
+[INFO] 14-03-2025 14:40:25 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISالنقابة العامة للمرشدين السياحيين
+[INFO] 14-03-2025 14:40:25 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابة العلاج الطبيعى
+[INFO] 14-03-2025 14:40:26 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابة المهن الزراعية
+[INFO] 14-03-2025 14:40:27 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابة المهن التعليمية
+[INFO] 14-03-2025 14:40:27 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابه المهن البيطرية
+[INFO] 14-03-2025 14:40:28 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابة المهندسين
+[INFO] 14-03-2025 14:40:29 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISCompoundy
+[INFO] 14-03-2025 14:40:30 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:81)] - Syndicate Name ISنقابه المبرمجين المصريه
+[INFO] 14-03-2025 14:40:30 [main] [Pages.P08_syndicatePage.getSyndicateName(P08_syndicatePage.java:83)] - Syndicate Number IS8
+[INFO] 14-03-2025 14:40:30 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseassertThatAllSyndicateDisplayedAsExpectedPassed
+[INFO] 14-03-2025 14:40:30 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:40)] - null
+[INFO] 14-03-2025 14:40:31 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - chromedriver is opened
+[INFO] 14-03-2025 14:40:36 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - Page is redirected to URL
+[INFO] 14-03-2025 14:40:36 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToAgricoultureSyndicateStarted
+[INFO] 14-03-2025 14:40:36 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01581319580
+[INFO] 14-03-2025 14:40:36 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01581319580
+[INFO] 14-03-2025 14:40:42 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:572933
+[INFO] 14-03-2025 14:40:42 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:572933
+[INFO] 14-03-2025 14:40:50 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToAgricoultureSyndicatefailed
+[INFO] 14-03-2025 14:40:51 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:40)] - null
+[INFO] 14-03-2025 14:40:53 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - chromedriver is opened
+[INFO] 14-03-2025 14:40:59 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - Page is redirected to URL
+[INFO] 14-03-2025 14:40:59 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToEDUSyndicateStarted
+[INFO] 14-03-2025 14:40:59 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01182279639
+[INFO] 14-03-2025 14:40:59 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01182279639
+[INFO] 14-03-2025 14:41:06 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:221842
+[INFO] 14-03-2025 14:41:06 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:221842
+[INFO] 14-03-2025 14:41:12 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:52)] - Massage is :نقابة المهن التعليمية
+[INFO] 14-03-2025 14:41:12 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToEDUSyndicatePassed
+[INFO] 14-03-2025 14:41:12 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:40)] - null
+[INFO] 14-03-2025 14:41:13 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - chromedriver is opened
+[INFO] 14-03-2025 14:41:16 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - Page is redirected to URL
+[INFO] 14-03-2025 14:41:16 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToGptsSyndicateStarted
+[INFO] 14-03-2025 14:41:16 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01529521163
+[INFO] 14-03-2025 14:41:16 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01529521163
+[INFO] 14-03-2025 14:41:22 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:873476
+[INFO] 14-03-2025 14:41:22 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:873476
+[INFO] 14-03-2025 14:41:26 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:52)] - Massage is :نقابة العلاج الطبيعى
+[INFO] 14-03-2025 14:41:26 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToGptsSyndicatePassed
+[INFO] 14-03-2025 14:41:26 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:40)] - null
+[INFO] 14-03-2025 14:41:28 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - chromedriver is opened
+[INFO] 14-03-2025 14:41:30 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - Page is redirected to URL
+[INFO] 14-03-2025 14:41:30 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToTourGuideSyndicateStarted
+[INFO] 14-03-2025 14:41:30 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01019061732
+[INFO] 14-03-2025 14:41:30 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01019061732
+[INFO] 14-03-2025 14:41:36 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:198126
+[INFO] 14-03-2025 14:41:36 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:198126
+[INFO] 14-03-2025 14:42:11 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToTourGuideSyndicatefailed
+[INFO] 14-03-2025 14:42:12 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:40)] - null
+[INFO] 14-03-2025 14:42:13 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:42)] - chromedriver is opened
+[INFO] 14-03-2025 14:42:16 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:44)] - Page is redirected to URL
+[INFO] 14-03-2025 14:42:16 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToVETSyndicateStarted
+[INFO] 14-03-2025 14:42:16 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01505494840
+[INFO] 14-03-2025 14:42:16 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01505494840
+[INFO] 14-03-2025 14:42:21 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:429177
+[INFO] 14-03-2025 14:42:21 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:429177
+[INFO] 14-03-2025 14:42:27 [main] [Pages.P04_HomePage.getSyndicateName(P04_HomePage.java:52)] - Massage is :نقابه المهن البيطرية
+[INFO] 14-03-2025 14:42:27 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidSwappingToVETSyndicatePassed

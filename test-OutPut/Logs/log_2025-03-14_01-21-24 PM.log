@@ -1,0 +1,7 @@
+[INFO] 14-03-2025 13:21:24 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:41)] - null
+[INFO] 14-03-2025 13:21:26 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - chromedriver is opened
+[INFO] 14-03-2025 13:21:28 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - Page is redirected to URL
+[INFO] 14-03-2025 13:21:28 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToGptsSyndicateStarted
+[INFO] 14-03-2025 13:21:29 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01539002331
+[INFO] 14-03-2025 13:21:29 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01539002331
+[INFO] 14-03-2025 13:21:34 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToGptsSyndicatefailed

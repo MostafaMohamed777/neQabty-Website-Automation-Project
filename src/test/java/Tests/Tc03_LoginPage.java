@@ -16,8 +16,7 @@ import Listeners.iInvokedMethodListenersClass;
 import Listeners.iTestResultListenersClass;
 import org.testng.annotations.Test;
 
-import static DriverFactory.DriverFactory.getDriver;
-import static DriverFactory.DriverFactory.setUpBrowser;
+import static DriverFactory.DriverFactory.*;
 import static Utilittes.DataUtils.getPropertyValue;
 
 @Listeners({iInvokedMethodListenersClass.class,
@@ -65,6 +64,6 @@ public class Tc03_LoginPage {
     @AfterMethod
     public void quit()
     {
-        // quitDriver();
+        quitDriver();
     }
 }

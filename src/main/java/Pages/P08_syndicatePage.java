@@ -14,8 +14,8 @@ public class P08_syndicatePage {
     private final By tourGuides =By.xpath("//h4[text()=\"النقابة العامة للمرشدين السياحيين\"]");
     private final By physicalTherapy =By.xpath("//h4[text()=\"نقابة العلاج الطبيعى\"]");
     private final By agricultural =By.xpath("//h4[text()=\"نقابة المهن الزراعية\"]");
-    private final By educational =By.xpath("//h4[text()=\"نقابه المهن التعليمية\"]");
-    private final By veterinarians =By.xpath("//h4[text()=\"نقابه الاطباء البيطريين\"]");
+    private final By educational =By.xpath("//h4[text()=\"نقابة المهن التعليمية\"]");
+    private final By veterinarians =By.xpath("//h4[text()=\"نقابه المهن البيطرية\"]");
     private final By engineer =By.xpath("//h4[text()=\"نقابة المهندسين\"]");
     private final By swappingBtn=By.xpath("//div[2]/div[2]/div/button ");
     private final By syndicatesDynamicLocator=By.xpath("//div/div/a/div/h4");

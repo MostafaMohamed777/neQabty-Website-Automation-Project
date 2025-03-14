@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <listeners>
+        <listener class-name="Listeners.iTestResultListenersClass"/>
+        <listener class-name="Listeners.iInvokedMethodListenersClass"/>
+    </listeners>
+    <test name="Regression Test">
+        <classes>
+
+            <class name="Tests.Tc02_RegistrationPage">
+                <methods>
+                    <include name="ValidDynamicRegistration"/>
+                </methods>
+            </class>
+
+            <class name="Tests.Tc03_LoginPage">
+            <methods>
+                <include name="ValidLoginCycle"/>
+            </methods>
+        </class>
+            <class name="Tests.Tc04_HomePage">
+            <methods>
+                <include name="ValidNavigateToSyndicatePage"/>
+                <include name="ValidNavigateToProfilePage"/>
+            </methods>
+        </class>
+            <class name="Tests.Tc07_ProfilePage">
+            <methods>
+                <include name="ValidLogOut"/>
+            </methods>
+        </class>
+            <class name="Tests.Tc08_SyndicatePage"/>
+            <class name="Tests.Tc09_SwappingPage">
+            <methods>
+              <exclude name="ValidSwappingToENGSyndicate"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>

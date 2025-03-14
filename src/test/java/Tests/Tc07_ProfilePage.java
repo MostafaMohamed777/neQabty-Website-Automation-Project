@@ -20,8 +20,7 @@ import java.time.Duration;
 import Listeners.iInvokedMethodListenersClass;
 import Listeners.iTestResultListenersClass;
 
-import static DriverFactory.DriverFactory.getDriver;
-import static DriverFactory.DriverFactory.setUpBrowser;
+import static DriverFactory.DriverFactory.*;
 import static Utilittes.DataUtils.getPropertyValue;
 
 @Listeners({iInvokedMethodListenersClass.class,
@@ -46,7 +45,7 @@ public class Tc07_ProfilePage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL"));
+        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -65,14 +64,14 @@ public class Tc07_ProfilePage {
     @Test
     public void ValidLogOut() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterProfilePage()
                 .enterLogOut();
         Assert.assertTrue(new P03_LoginPage(getDriver()).
-                assertHomePage(DataUtils.getPropertyValue("Environments.properties","LANDING_URL")));
+                assertHomePage(DataUtils.getPropertyValue("Environments.properties","LANDING_URL_STAGING")));
     }
     @Test
     public void packagesAssertionsPageInNeqMember() {
@@ -100,6 +99,6 @@ public class Tc07_ProfilePage {
     @AfterMethod
     public void quit()
     {
-        // quitDriver();
+        quitDriver();
     }
 }

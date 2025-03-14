@@ -1,0 +1,7 @@
+[INFO] 13-03-2025 14:38:04 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:43)] - null
+[INFO] 13-03-2025 14:38:06 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:45)] - chromedriver is opened
+[INFO] 13-03-2025 14:38:09 [main] [Tests.Tc03_LoginPage.setUp(Tc03_LoginPage.java:47)] - Page is redirected to URL
+[INFO] 13-03-2025 14:38:09 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidLoginCycleStarted
+[INFO] 13-03-2025 14:38:29 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01224754446
+[INFO] 13-03-2025 14:38:29 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 987252
+[INFO] 13-03-2025 14:38:31 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidLoginCyclePassed

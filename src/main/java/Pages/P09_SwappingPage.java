@@ -49,6 +49,16 @@ public class P09_SwappingPage {
         Utility.clickElement(driver,homePageBtn);
         return new P04_HomePage(driver);
     }
+    public P09_SwappingPage enterStaticMemberId (String memberIdd)
+    {
+        Utility.sendData(driver,membership_id,memberIdd);
+        return this;
+    }
+    public P09_SwappingPage enterStaticNationalId(String NationalId)
+    {
+        Utility.sendData(driver,national_id,NationalId);
+        return this;
+    }
     //Assertions
 
 }

@@ -1,0 +1,9 @@
+[INFO] 14-03-2025 13:19:45 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:41)] - null
+[INFO] 14-03-2025 13:19:50 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:43)] - chromedriver is opened
+[INFO] 14-03-2025 13:19:53 [main] [Tests.Tc09_SwappingPage.setUp(Tc09_SwappingPage.java:45)] - Page is redirected to URL
+[INFO] 14-03-2025 13:19:53 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidSwappingToTourGuideSyndicateStarted
+[INFO] 14-03-2025 13:19:53 [main] [Utilittes.Utility.saveData(Utility.java:355)] - phoneNumbersaved with value:01241400065
+[INFO] 14-03-2025 13:19:53 [main] [Pages.P02_RegistrationPage.registerWithRandomPhoneNumber(P02_RegistrationPage.java:57)] - the generated phone number is =01241400065
+[INFO] 14-03-2025 13:20:00 [main] [Utilittes.Utility.generatePinCode(Utility.java:320)] - Generated PIN Code:138797
+[INFO] 14-03-2025 13:20:00 [main] [Utilittes.Utility.saveData(Utility.java:355)] - pinCodesaved with value:138797
+[INFO] 14-03-2025 13:20:12 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidSwappingToTourGuideSyndicatefailed

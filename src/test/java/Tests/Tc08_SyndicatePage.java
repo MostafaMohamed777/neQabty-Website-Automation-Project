@@ -16,8 +16,7 @@ import java.time.Duration;
 import Listeners.iInvokedMethodListenersClass;
 import Listeners.iTestResultListenersClass;
 
-import static DriverFactory.DriverFactory.getDriver;
-import static DriverFactory.DriverFactory.setUpBrowser;
+import static DriverFactory.DriverFactory.*;
 import static Utilittes.DataUtils.getPropertyValue;
 
 
@@ -43,7 +42,7 @@ public class Tc08_SyndicatePage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL"));
+        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -52,20 +51,20 @@ public class Tc08_SyndicatePage {
     @Test
     public void ValidNavigateToSyndicatePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterSyndicatePage();
         Assert.assertTrue(new P08_syndicatePage(getDriver()).
-                verifyUrl(DataUtils.getPropertyValue("Environments.properties","syndicate_Page")));
+                verifyUrl(DataUtils.getPropertyValue("Environments.properties","syndicate_Page_staging")));
     }
     @Test
     public void assertThatAllSyndicateDisplayedAsExpected() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterSyndicatePage();
         Assert.assertTrue(new P08_syndicatePage(getDriver()).getSyndicateName());
@@ -73,20 +72,20 @@ public class Tc08_SyndicatePage {
     @Test
     public void ValidNavigateToSwappingSyndicatePage() throws IOException {
         new P03_LoginPage(getDriver())
-                .enterStaticPhoneNumber(phoneNumber)
+                .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()
-                .enterStaticPinCode(pinCode)
+                .enterDynamicPinCode()
                 .confirmLoginBTn()
                 .enterSyndicatePage()
                 .tourGuidesSyndicates()
                 .SyndicatesRegister();
         Assert.assertTrue(new P08_syndicatePage(getDriver()).
-                verifyUrl(DataUtils.getPropertyValue("Environments.properties","Swapping_URl")));
+                verifyUrl(DataUtils.getPropertyValue("Environments.properties","Swapping_URl_staging")));
     }
 
     @AfterMethod
     public void quit()
     {
-        // quitDriver();
+        quitDriver();
     }
 }
