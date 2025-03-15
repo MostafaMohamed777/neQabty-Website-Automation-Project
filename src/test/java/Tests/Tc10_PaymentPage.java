@@ -20,6 +20,7 @@ import static Utilittes.DataUtils.getPropertyValue;
 public class Tc10_PaymentPage {
     private final String phoneNumberFor3elagSyn = DataUtils.getJasonData("ValidRegistrationData","MobilePhone3elag");
     private final String phoneNumberForBitreenSyn = DataUtils.getJasonData("ValidRegistrationData","MobilePhoneBitreen");
+    private final String phoneNumberForMobarmegenSyn = DataUtils.getJasonData("ValidRegistrationData","MobilePhoneMobrmegen");
     private final String pinCode = DataUtils.getJasonData("ValidRegistrationData","PinCode");
 
 
@@ -124,6 +125,98 @@ public class Tc10_PaymentPage {
                 assertMassageForOpayCard(),"Successful Massage should displayed as expected ");
     }
     @Test
+    public void paymentWithOpayCodeForMobarmrgenSynd() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumberForMobarmegenSyn)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterSubscribePage()
+                .enterSubscribeBtn()
+                .navigateToPaymentPage()
+                .chooseOrderWay()
+                //.enterDeliveryAddress()
+                //.enterDeliveryMobile()
+               // .enterDeliveryNotes()
+                .confirmData()
+                .chooseOpayCode()
+                .confirmData();
+        Assert.assertTrue(new P10_PaymentPage(getDriver()).
+                assertTotalAmount(),"Successful Massage should displayed as expected ");
+    }
+    @Test
+    public void paymentWithFawryForMobrmegenSynd() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumberForMobarmegenSyn)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterSubscribePage()
+                .enterSubscribeBtn()
+                .navigateToPaymentPage()
+                .chooseOrderWay()
+                .enterDeliveryAddress()
+                //.enterDeliveryAddress()
+                //.enterDeliveryMobile()
+                //.enterDeliveryNotes()
+                .confirmData()
+                .chooseFawry()
+                .confirmData();
+        Assert.assertTrue(new P10_PaymentPage(getDriver()).
+                assertTotalAmount(),"Successful Massage should displayed as expected ");
+    }
+    @Test
+    public void paymentWithGedieaForMobarmegenSynd() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumberForMobarmegenSyn)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterSubscribePage()
+                .enterSubscribeBtn()
+                .navigateToPaymentPage()
+                .chooseOrderWay()
+                .enterDeliveryAddress()
+                //.enterDeliveryAddress()
+                //.enterDeliveryMobile()
+                // .enterDeliveryNotes()
+                .confirmData()
+                .chooseGediea()
+                .confirmData()
+                .enterGedieaCardNumber("5555 5555 5555 4444")
+                .enterGedieaExpiryDay("01/39")
+                .enterGedieaCvv("100")
+                .enterGedieaCardName();
+        Assert.assertTrue(new P10_PaymentPage(getDriver()).
+                assertMassageForGeidea(),"Successful Massage should displayed as expected ");
+    }
+    @Test
+    public void paymentWithOpayCardForMobarmegenSynd() throws IOException {
+        new P03_LoginPage(getDriver())
+                .enterStaticPhoneNumber(phoneNumberForMobarmegenSyn)
+                .confirmLoginPhoneNumber()
+                .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .enterSubscribePage()
+                .enterSubscribeBtn()
+                .navigateToPaymentPage()
+                .chooseOrderWay()
+                .enterDeliveryAddress()
+                //.enterDeliveryAddress()
+                //.enterDeliveryMobile()
+                // .enterDeliveryNotes()
+                .confirmData()
+                .chooseOpayCard()
+                .confirmData()
+                .enterOpayCardNumber("4508 7500 1574 1019")
+                .enterOpayCardName()
+                .enterOpayExpiryMonth("05")
+                .enterOpayExpiryYear("25")
+                .enterOpayCvv("100");
+        Assert.assertTrue(new P10_PaymentPage(getDriver()).
+                assertMassageForOpayCard(),"Successful Massage should displayed as expected ");
+    }
+    @Test
     public void paymentWithOpayCodeForBitarrenSynd() throws IOException {
         new P03_LoginPage(getDriver())
                 .enterStaticPhoneNumber(phoneNumberForBitreenSyn)
@@ -135,8 +228,8 @@ public class Tc10_PaymentPage {
                 .navigateToPaymentPage()
                 .chooseOrderWay()
                 .enterDeliveryAddress()
-             //   .enterDeliveryMobile()
-               // .enterDeliveryNotes()
+                //   .enterDeliveryMobile()
+                // .enterDeliveryNotes()
                 .confirmData()
                 .chooseOpayCode()
                 .confirmData();
