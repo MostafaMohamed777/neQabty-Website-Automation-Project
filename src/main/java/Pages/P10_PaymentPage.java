@@ -15,8 +15,8 @@ public class P10_PaymentPage {
     private final By opayCode=By.xpath("//form/div/div[1]//input");
     private final By opayCard=By.xpath("//form/div/div[2]//input");
     private final By neqabtyWallet=By.xpath("//form/div/div[3]//input");
-    private final By fawrey=By.xpath("//form/div/div[4]//input");
-    private final By gediea =By.xpath("//form/div/div[5]//input");
+    private final By fawrey=By.xpath("//form/div/div[3]//input");
+    private final By gediea =By.xpath("//form/div/div[4]//input");
     private final By OrderWay=By.xpath("//app-delivery-method/div//div//input");
     private final By deliveryAddress=By.id("deliveryAddress");
     private final By deliveryMobile=By.id("deliveryMobile");

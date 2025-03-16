@@ -1,0 +1,4 @@
+[INFO] 16-03-2025 15:06:37 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:39)] - null
+[INFO] 16-03-2025 15:06:39 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:41)] - chromedriver is opened
+[INFO] 16-03-2025 15:06:42 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:43)] - Page is redirected to URL
+[INFO] 16-03-2025 15:07:15 [main] [Pages.P10_PaymentPage.getMassageForGeidea(P10_PaymentPage.java:126)] - Massage is :NEQABTY
