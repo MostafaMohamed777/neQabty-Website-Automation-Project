@@ -70,6 +70,13 @@ public class P04_HomePage {
         return new P10_PaymentPage(driver);
     }
 
+    public P11_PharmacyPage navigateToPharmacyPage()
+    {
+        Utility.scrollToElement(driver,pharmacy);
+        driver.findElement(pharmacy).click();
+        return new P11_PharmacyPage(driver);
+    }
+
 
 
     //Assertions

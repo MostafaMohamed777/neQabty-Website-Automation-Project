@@ -45,7 +45,7 @@ public class Tc02_RegistrationPage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LANDING_URL_STAGING"));
+        getDriver().get(getPropertyValue("Environments.properties", "REGISTER_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -71,10 +71,9 @@ public void ValidStaticRegistrationCycleTc()
 }
 @Test
 public void ValidDynamicRegistration() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnLoginBtn();
+
        new P02_RegistrationPage(getDriver())
-               .registerWithUniqueRandomPhoneNumber()
-               .confirmRegisterData()
+             .registerWithUniqueRandomPhoneNumber()
             .registrationWithRandomFullName()
             .confirmRegisterData()
             .registerWithDynamicPinCode()

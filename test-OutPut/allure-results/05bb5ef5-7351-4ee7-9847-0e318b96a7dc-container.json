@@ -1,0 +1,1 @@
+{"uuid":"05bb5ef5-7351-4ee7-9847-0e318b96a7dc","name":"Tests.Tc10_PaymentPage.quit","children":["79dff235-1062-4530-91d8-c95636224009"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742761277194,"stop":1742761277194}],"start":1742761277194,"stop":1742761277194}

@@ -1,0 +1,7 @@
+[INFO] 25-03-2025 22:02:43 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 25-03-2025 22:02:45 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 25-03-2025 22:02:48 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 25-03-2025 22:02:48 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToPharmacyPageStarted
+[INFO] 25-03-2025 22:02:48 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01080662661
+[INFO] 25-03-2025 22:02:54 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01080662661
+[INFO] 25-03-2025 22:03:24 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToPharmacyPagefailed

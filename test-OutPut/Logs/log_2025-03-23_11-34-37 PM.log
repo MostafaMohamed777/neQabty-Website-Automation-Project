@@ -1,0 +1,5 @@
+[INFO] 23-03-2025 23:34:37 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:39)] - null
+[INFO] 23-03-2025 23:34:39 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:41)] - chromedriver is opened
+[INFO] 23-03-2025 23:34:41 [main] [Tests.Tc10_PaymentPage.setUp(Tc10_PaymentPage.java:43)] - Page is redirected to URL
+[INFO] 23-03-2025 23:35:07 [main] [Pages.P10_PaymentPage.getTotalAmountForReset(P10_PaymentPage.java:142)] - Massage is :68.00
+[INFO] 23-03-2025 23:35:07 [main] [Pages.P10_PaymentPage.getTotalAmountForSystemWithDilevreyFees(P10_PaymentPage.java:149)] - Massage is :68.00

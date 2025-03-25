@@ -1,0 +1,1 @@
+{"uuid":"f19586b2-707d-4e0b-aedd-54d13b0bde21","name":"Tests.Tc04_HomePage.setUp","children":["cee68e51-789c-470b-bd39-b59389a2f923"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742930684286,"stop":1742930692648}],"afters":[],"start":1742930684286,"stop":1742930692649}

@@ -1,0 +1,5 @@
+[INFO] 25-03-2025 21:32:26 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 25-03-2025 21:32:29 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 25-03-2025 21:32:31 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 25-03-2025 21:32:31 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToPharmacyPageStarted
+[INFO] 25-03-2025 21:33:12 [main] [Listeners.iInvokedMethodListenersClass.afterInvocation(iInvokedMethodListenersClass.java:22)] - Test CaseValidNavigateToPharmacyPagefailed

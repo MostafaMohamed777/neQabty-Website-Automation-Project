@@ -1,0 +1,1 @@
+{"uuid":"4c5b06d9-9436-47ab-b425-88e43644f9ef","name":"Tests.Tc11_PharmacyTC.quit","children":["7826c196-139d-4b97-939b-cf6c63dbc6da"],"description":"","befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742937458435,"stop":1742937458436}],"start":1742937458435,"stop":1742937458436}

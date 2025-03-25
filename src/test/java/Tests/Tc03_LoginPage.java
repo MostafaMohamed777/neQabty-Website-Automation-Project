@@ -42,7 +42,7 @@ public class Tc03_LoginPage {
         LogsUtils.info(System.getProperty("browser"));
         setUpBrowser(browser);
         LogsUtils.info(browser + "driver is opened");
-        getDriver().get(getPropertyValue("Environments.properties", "LANDING_URL_STAGING"));
+        getDriver().get(getPropertyValue("Environments.properties", "LOGIN_URL_STAGING"));
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().
                 implicitlyWait(Duration.ofSeconds(5));
@@ -50,7 +50,6 @@ public class Tc03_LoginPage {
 
     @Test
     public void ValidLoginCycle() throws IOException {
-        new P01_LandingPge(getDriver()).clickOnLoginBtn();
         new P03_LoginPage(getDriver())
                 .enterDynamicPhoneNumber()
                 .confirmLoginPhoneNumber()

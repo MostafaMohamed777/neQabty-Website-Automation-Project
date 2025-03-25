@@ -94,9 +94,21 @@ public class Tc04_HomePage {
               .navigateToPaymentPage();
     }
 
+    @Test
+    public void ValidNavigateToPharmacyPage() throws IOException {
+        new P03_LoginPage(getDriver())
+              //  .enterStaticPhoneNumber("01223980192")
+                .enterDynamicPhoneNumber()
+                .confirmLoginPhoneNumber()
+                .enterDynamicPinCode()
+               // .enterStaticPinCode(pinCode)
+                .confirmLoginBTn()
+                .navigateToPharmacyPage();
+    }
+
     @AfterMethod
     public void quit()
     {
-        quitDriver();
+       // quitDriver();
     }
 }

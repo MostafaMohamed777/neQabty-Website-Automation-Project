@@ -1,0 +1,7 @@
+[INFO] 25-03-2025 22:10:30 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:42)] - null
+[INFO] 25-03-2025 22:10:32 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:44)] - chromedriver is opened
+[INFO] 25-03-2025 22:10:34 [main] [Tests.Tc04_HomePage.setUp(Tc04_HomePage.java:46)] - Page is redirected to URL
+[INFO] 25-03-2025 22:10:34 [main] [Listeners.iTestResultListenersClass.onTestStart(iTestResultListenersClass.java:9)] - Test CaseValidNavigateToPharmacyPageStarted
+[INFO] 25-03-2025 22:10:34 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved phoneNumber with value: 01175870420
+[INFO] 25-03-2025 22:10:39 [main] [Utilittes.Utility.getData(Utility.java:369)] - Retrieved pinCode with value: 639491
+[INFO] 25-03-2025 22:10:41 [main] [Listeners.iTestResultListenersClass.onTestSuccess(iTestResultListenersClass.java:13)] - Test CaseValidNavigateToPharmacyPagePassed

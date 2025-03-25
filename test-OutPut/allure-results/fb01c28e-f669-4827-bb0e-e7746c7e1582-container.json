@@ -1,0 +1,1 @@
+{"uuid":"fb01c28e-f669-4827-bb0e-e7746c7e1582","name":"Tests.Tc11_PharmacyTC.setUp","children":["14f69ddc-ffdd-4de0-9fa5-87c8552b9ae7"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742934317897,"stop":1742934325042}],"afters":[],"start":1742934317897,"stop":1742934325042}
